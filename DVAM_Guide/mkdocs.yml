@@ -16,9 +16,9 @@ nav:
   #         - Calculating the gene activity matrix of scATAC-seq: Tutorials-single/t_gene_activity.ipynb
   #         - Pseudobulk visualization: Tutorials-single/t_pseudobulk_visual.ipynb
   - Lecture:
-      - Lecture 1: Introduction to Single-cell ATAC-seq Data Analysis: lecture/lecture1.md
-      - Lecture 2: Data Preprocessing and Quality Control: lecture/lecture2.md
-      - Lecture 3: Dimensionality Reduction and Clustering: lecture/lecture3.md
+      - Lecture1: Introduction to Single-cell ATAC-seq Data Analysis: lecture/lecture1.md
+      - Lecture2: Data Preprocessing and Quality Control: lecture/lecture2.md
+      - Lecture3: Dimensionality Reduction and Clustering: lecture/lecture3.md
       # - Lecture 4: Peak Calling and Annotation: lecture/lecture4.md
       # - Lecture 5: Differential Accessibility Analysis: lecture/lecture5.md
       # - Lecture 6: Integrative Analysis with scRNA-seq Data: lecture/lecture6.md
