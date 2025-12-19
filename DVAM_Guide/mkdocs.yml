@@ -6,19 +6,8 @@ copyright: "Copyright &copy; PKU EMBL Lab 2025"
 nav:
   - Index: index.md
   - Prerequisites: Prerequisites_guild.md
-  # - Tutorial:
-  #     - Bulk:
-  #         - ATAC-seq visualization: Tutorials-bulk/t_bulk_visualize.ipynb
-  #     - Single:
-  #         - Preprocessing the data of scATAC-seq: Tutorials-single/t_preprocess.ipynb
-  #         - Data integration: Tutorials-single/t_single_concat.ipynb
-  #         - Find the genes related regions: Tutorials-single/t_findgenes.ipynb
-  #         - Calculating the gene activity matrix of scATAC-seq: Tutorials-single/t_gene_activity.ipynb
-  #         - Pseudobulk visualization: Tutorials-single/t_pseudobulk_visual.ipynb
-  - Lecture1: Lecture/lecture1.md
-  - Lecture2: Lecture/lecture2.md
-  # - Reference:
-  # - API documentation: api/index.md
+  - Lecture1: lecture/lecture1.md
+  - Lecture2: lecture/lecture2.md
   - Release notes: Release_notes.md
   # - Developer guild: Developer_guild.md
 
