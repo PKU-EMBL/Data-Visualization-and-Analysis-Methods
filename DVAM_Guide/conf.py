@@ -17,9 +17,9 @@
 #import Pyomic
 # -- Project information -----------------------------------------------------
 
-project = 'Metaverse'
-copyright = '2024, EMBL-PKU'
-author = 'zhaorui-bi'
+project = 'Data Visualization and Analysis Methods'
+copyright = 'PKU EMBL Lab 2025'
+author = 'Zhaorui(Elijah) JIANG'
 
 # The full version, including alpha/beta/rc tags
 release = '0.0.1'
