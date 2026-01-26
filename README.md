@@ -1,32 +1,28 @@
-# PKU EMBL | Data Visualization and Analysis Methods
+# 基于Myctobase数据库的南大洋中层鱼类采样数据特征分析研究
 
-## 📣 News
+## 项目简介
 
-* **[2025/12/29]**: 🤗 We release **Course Data-Visualization-and-Analysis-Methods Community**.
+本项目将基于Myctobase数据库的相关数据，进行南大洋中层鱼类群落的丰度分析、物种分布、物种多样性及其形态特征分析，旨在为南大洋生态保护及可持续管理提供科学依据。
 
-## 📅 Requirements
+## 数据来源
 
-1. The topic is up to your group's major
-2. Each group should be up most to 4 people
-3. Visualize and anlysis a meaningfule datasets for research
-4. Write detialed README file and technicla report (mandatory)
-5. Provide a user-friendly website (optional)
-6. Contribution sheet(Contribution percentage for each members, should be includer in GitHub Repository)
+**Myctobase数据库（Zenodo.org/records/6562776）**
 
-> Potential Database: https://ngdc.cncb.ac.cn/databasecommons/
-> 
-> Example-1: MIBiG(Minimum Information about a Biosynthetic Gene cluster): https://ngdc.cncb.ac.cn/databasecommons/database/id/7127
->
-> Example-2: BiG-FAM(Biosynthetic Gene Cluster Family (GCF) database )https://bigfam.bioinformatics.nl/home
+三个主要数据文件：
 
+- **1.event.csv**：记录采样事件的元数据，包含4780个采样网次的信息，包括采样地点、采样方法、采样时间等。
 
-## 📖 Students Group Projects
+- **2.groupOccurrence.csv**：记录了17,491条物种出现与丰度的详细数据，提供了不同物种的出现频率与相对丰度。
 
-> Group ID: Projects Topic: Related GitHub link with detailed README files —— Team numbers
->
-> Example: G0: Cryo-ET Analysis and Visualization Platform: [pyp software GitHub Link](https://github.com/nextpyp/pyp) —— Christy, Vivek
+- **3.individualOccurrence.csv**：记录每个个体的详细测量数据，包括体长、体重、性别、生活阶段等信息，是物种形态学分析的重要基础。
 
-### Fall 2025-2026 Semester
+## 数据可视化
+
+### 可视化工具
+
+**R（version 4.5.2）**
+
+### 图表绘制
 
 G1: 
 
