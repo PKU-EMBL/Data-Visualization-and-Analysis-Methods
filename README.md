@@ -3,25 +3,55 @@
 ## 项目简介
 
 本项目将基于Myctobase数据库的相关数据，进行南大洋中层鱼类群落的丰度分析、物种分布、物种多样性及其形态特征分析，旨在为南大洋生态保护及可持续管理提供科学依据。
+## 功能概述
+1. 多样性指数计算
+
+- [x] 物种丰富度 (Species Richness)
+
+- [x] Shannon多样性指数
+
+- [x] Simpson指数
+
+- [x] Pielou均匀度指数
+
+2. 空间可视化
+
+- [x] 采样点分布地图
+
+- [x] 物种丰富度空间分布
+
+- [x] Shannon指数空间分布
+
+- [x] 采样密度热图
+
+3. 统计分析与可视化
+
+- [x] 多样性指标分布直方图
+
+- [x] 各扇区多样性比较
+
+- [x] 丰富度与Shannon指数相关性分析
 ## 使用说明
 准备数据
 将三个CSV文件放置在脚本同目录下
 确保数据格式正确
 ## 安装依赖
-首次运行  
-''' R
+首次运行 
+```r
 # 安装必要包
 install.packages(c("tidyverse", "vegan", "dplyr", "ggplot2", "tidyr", "permute"))
 install.packages("mapdata")
 install.packages("patchwork")
-install.packages("viridis", type = "binary")'''
+install.packages("viridis", type = "binary")
+```
 更新包  
-''' R
+```r
 # 更新所有相关包
 install.packages(c("ggplot2", "tidyverse", "scales", "rlang", "cli", "pillar"))
 
 # 或更新所有已安装的包
-update.packages(ask = FALSE, checkBuilt = TRUE)'''
+update.packages(ask = FALSE, checkBuilt = TRUE)
+```
 ## 数据来源
 
 **Myctobase数据库 (https://zenodo.org/records/6562776)**
@@ -114,7 +144,7 @@ G18:
 10. 创建基础地图   
 11.添加多样性数据图层  
 12.生成统计图表  
-'关键函数'
+`关键函数`
 specnumber() - 计算物种丰富度
 diversity() - 计算多样性指数（Shannon/Simpson）
 ggplot() - 创建可视化图表
@@ -122,7 +152,7 @@ geom_point() - 添加散点图层
 scale_color_gradientn() - 设置颜色渐变
 ## 🔒 License
 * See [LICENSE](LICENSE) for details.
-## '注意事项'
+## `注意事项`
 1. 坐标处理  
 使用起始和结束坐标的平均值; 自动处理不同命名的经纬度列; 过滤缺失坐标的数据
 2. 数据质量  
@@ -136,10 +166,11 @@ scale_color_gradientn() - 设置颜色渐变
 地图无法显示: 检查maps和mapdata包版本,确保有可用的互联网连接（用于下载地图数据）
 ## 调试模式
 脚本包含详细的打印语句，可通过以下方式监控执行：
-'''R
+```r
 print("包加载状态：")
 print("物种矩阵维度：")
-print("Alpha多样性数据前几行：")'''
+print("Alpha多样性数据前几行：")
+```
 ## 扩展功能
 可根据需要修改：
 1. 调整地图范围和分辨率
