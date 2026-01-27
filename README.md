@@ -103,13 +103,14 @@ update.packages(ask = FALSE, checkBuilt = TRUE)
 ### 运行代码
 ```r
 # 运行完整分析
-source("alpha_diversity_analysis.R")
+source("1.Sampling point distribution map.R")
+source("2.α-diversity and richness graph group.R")
 ```
 
 ### 输出文件
 | 文件名称 | 描述 | 尺寸 | 格式 |
 |---------|------|------|------|
-| `Distribution of mesopelagic fish sampling sites.png` | 采样点基础分布图 | 10×7英寸 | PNG |
+| `Antarctic sampling points.png` | 采样站点分布图 | 10×10英寸 | PNG |
 | `Map of species richness distribution.png` | 物种丰富度空间分布 | 12×8英寸 | PNG |
 | `Map of Shannon index distribution.png` | Shannon指数空间分布 | 12×8英寸 | PNG |
 | `Comparative map of diversity distribution.png` | 多样性对比图 | 16×7英寸 | PNG |
@@ -146,6 +147,12 @@ pielou_evenness <- ifelse(species_richness > 0, shannon_index / log(species_rich
 ### 数据要求
 - `event.csv` - 采样事件元数据
 - `groupOccurrence.csv` - 物种出现记录
+
+### 运行代码
+```r
+# 运行完整分析
+source("3.Species abundance plot group.R")
+```
 
 ### 子模块2.1：物种丰度排名分析
 
@@ -216,15 +223,17 @@ top4_years <- yearly_total_abundance %>%
 
 ### 运行代码
 ```r
-# 运行分析
-source("length_weight_analysis.R")
+# 运行完整分析
+source("4.Species morphological characteristic group.R")
 ```
 
 ### 输出文件
-- **Top4_Fish_Length-Weight_Relationship.png**: 体长-体重关系散点图
-  - 尺寸：12×8英寸
-  - 分辨率：300 DPI
-  - 格式：PNG（白色背景）
+| 文件名称 | 描述 | 尺寸 | 格式 |
+|---------|------|------|------|
+| `Length-Weight_Relationship(Combined).png` | 前4物种体长-体重关系散点图（合并视角） | 12×8英寸 | PNG |
+| `Length-Weight_Relationship(Faceted).png` | 前4物种体长-体重关系散点图（单物种视角） | 14×10英寸 | PNG |
+| `Body_length_distribution_by_life_stage.png` | 前4物种不同生活阶段的体长分布箱线图 | 14×8英寸 | PNG |
+| `body_weight_distribution_by_sex.png` | 前4物种不同性别的体重分布小提琴图 | 14×8英寸 | PNG |
 
 ### 核心算法
 ```r
@@ -433,7 +442,13 @@ if(debug_mode) {
   print(paste("有效坐标样本:", sum(!is.na(clean_df$latitude))))
 }
 ```
-## 图表绘制
+## 小组成员
+
+- **马欣雨 2501212915**
+
+- **周楠 2501212938**
+
+- **郑婷玮 2501212910**
 
 ## 参考文献
 
