@@ -452,10 +452,9 @@ if(debug_mode) {
 
 ## 参考文献
 
-### 数据引用
-> Myctobase Database. (2022). Southern Ocean Mesopelagic Fish Survey Data. Zenodo. https://doi.org/10.5281/zenodo.6562776
-
-### 方法参考文献
+> 1. Myctobase Database. (2022). Southern Ocean Mesopelagic Fish Survey Data. Zenodo. https://doi.org/10.5281/zenodo.6562776
+>
+> 2. Woods, B., Trebilco, R., Walters, A. et al. Myctobase, a circumpolar database of mesopelagic fishes for new insights into deep pelagic prey fields. Sci Data 9, 404 (2022). https://doi.org/10.1038/s41597-022-01496-y
 
 
 
