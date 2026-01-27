@@ -135,7 +135,71 @@ simpson_index <- diversity(species_matrix, index = "simpson")
 pielou_evenness <- ifelse(species_richness > 0, shannon_index / log(species_richness), 0)
 ```
 
-## 模块二：体长-体重关系分析
+## 模块二：物种丰度动态分析
+
+### 功能概述
+分析南大洋中层鱼类物种丰度的时空变化模式：
+1. **物种丰度排名** - 识别最丰富的物种
+2. **区域分布** - 比较四大海区的物种组成
+3. **时间动态** - 分析年度趋势和季节性变化
+
+### 数据要求
+- `event.csv` - 采样事件元数据
+- `groupOccurrence.csv` - 物种出现记录
+
+### 子模块2.1：物种丰度排名分析
+
+#### 功能特点
+- 识别全球Top10最丰富物种
+- 按四大海区分区比较
+- 按最高丰度年份分年度分析
+
+#### 输出文件
+- **Species Abundance Analysis.png**：综合排名图表
+  - 尺寸：16×14英寸，300 DPI
+  - 格式：PNG（透明背景）
+
+#### 图表内容
+1. **A面板**：全球Top10物种条形图
+2. **B面板**：四大海区物种丰度比较
+3. **C面板**：Top4年份的物种丰度分面图
+
+### 子模块2.2：物种丰度时间动态分析
+
+#### 功能特点
+- 1991-2019年连续时间序列分析
+- 识别Top3优势物种
+- 夏季（12月-2月）vs 冬季（6月-8月）对比
+
+#### 输出文件
+1. **yearly_abundance_trend.png**：年度趋势折线图
+   - 尺寸：12×8英寸
+   - 显示：总丰度 + Top3物种
+
+2. **seasonal_abundance_dynamics.png**：季节动态柱状图
+   - 尺寸：14×10英寸
+   - 显示：夏冬季对比 + 物种分面
+
+### 核心算法
+```r
+# Top10物种筛选
+total_species_abundance <- clean_df %>%
+  group_by(scientificName) %>%
+  summarise(total_individuals = sum(individualCount, na.rm = TRUE)) %>%
+  arrange(desc(total_individuals))
+
+# Top4年份筛选
+yearly_total_abundance <- clean_df %>%
+  group_by(year) %>%
+  summarise(year_total_individuals = sum(individualCount, na.rm = TRUE)) %>%
+  arrange(desc(year_total_individuals))
+
+top4_years <- yearly_total_abundance %>% 
+  slice_head(n = 4) %>% 
+  pull(year)
+```
+
+## 模块三：体长-体重关系分析
 
 ### 功能概述
 分析南大洋四种丰度最高的中层鱼类的体长-体重关系，探索鱼类生长模式：
@@ -183,69 +247,6 @@ linear_models <- lapply(top4_species, function(sp) {
 3. **置信区间**：表示回归系数的可靠性
 4. **物种间比较**：通过比较不同物种的回归线了解生长策略差异
 
-## 模块三：物种丰度动态分析
-
-### 功能概述
-分析南大洋中层鱼类物种丰度的时空变化模式：
-1. **物种丰度排名** - 识别最丰富的物种
-2. **区域分布** - 比较四大海区的物种组成
-3. **时间动态** - 分析年度趋势和季节性变化
-
-### 数据要求
-- `event.csv` - 采样事件元数据
-- `groupOccurrence.csv` - 物种出现记录
-
-### 子模块3.1：物种丰度排名分析
-
-#### 功能特点
-- 识别全球Top10最丰富物种
-- 按四大海区分区比较
-- 按最高丰度年份分年度分析
-
-#### 输出文件
-- **Species Abundance Analysis.png**：综合排名图表
-  - 尺寸：16×14英寸，300 DPI
-  - 格式：PNG（透明背景）
-
-#### 图表内容
-1. **A面板**：全球Top10物种条形图
-2. **B面板**：四大海区物种丰度比较
-3. **C面板**：Top4年份的物种丰度分面图
-
-### 子模块3.2：物种丰度时间动态分析
-
-#### 功能特点
-- 1991-2019年连续时间序列分析
-- 识别Top3优势物种
-- 夏季（12月-2月）vs 冬季（6月-8月）对比
-
-#### 输出文件
-1. **yearly_abundance_trend.png**：年度趋势折线图
-   - 尺寸：12×8英寸
-   - 显示：总丰度 + Top3物种
-
-2. **seasonal_abundance_dynamics.png**：季节动态柱状图
-   - 尺寸：14×10英寸
-   - 显示：夏冬季对比 + 物种分面
-
-### 核心算法
-```r
-# Top10物种筛选
-total_species_abundance <- clean_df %>%
-  group_by(scientificName) %>%
-  summarise(total_individuals = sum(individualCount, na.rm = TRUE)) %>%
-  arrange(desc(total_individuals))
-
-# Top4年份筛选
-yearly_total_abundance <- clean_df %>%
-  group_by(year) %>%
-  summarise(year_total_individuals = sum(individualCount, na.rm = TRUE)) %>%
-  arrange(desc(year_total_individuals))
-
-top4_years <- yearly_total_abundance %>% 
-  slice_head(n = 4) %>% 
-  pull(year)
-```
 
 ## 数据预处理流程
 
