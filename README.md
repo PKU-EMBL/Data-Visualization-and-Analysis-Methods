@@ -43,4 +43,25 @@
    ```bash
    git clone https://github.com/your-repo-name.git
 
+## 安装与使用
+
+### 安装依赖
+
+本项目依赖于 `R` 和 `efootprint` 软件。
+
+- **安装 R**：请参考 [R 官网](https://cran.r-project.org/) 进行安装。
+- **安装 efootprint 软件**：具体安装步骤请参考该软件的文档。
+
+### 运行分析
+
+1. 使用 `RStudio` 打开项目文件夹。
+2. 运行 `LCA_analysis.R` 脚本以进行生命周期评价分析。
+
+### 结果展示
+
+在 `RStudio` 中，您可以运行以下命令进行可视化分析：
+
+```R
+source("LCA_analysis.R")
+plot_results()
 
