@@ -39,12 +39,6 @@
 
 ## 安装与使用
 
-1. 克隆本项目：
-   ```bash
-   git clone https://github.com/your-repo-name.git
-
-## 安装与使用
-
 ### 安装依赖
 
 本项目依赖于 `R` 和 `efootprint` 软件。
