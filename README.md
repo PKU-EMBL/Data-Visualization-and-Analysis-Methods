@@ -56,7 +56,7 @@ G13: 珠三角九市大气污染时空分布特征及影响因素分析：https:
 
 G14: 基于Myctobase数据库的南大洋中层鱼类采样数据特征分析研究：https://github.com/zhounancd/Group14-Sampling-Data-Analysis-of-Mesopelagic-Fish-in-Southern-Ocean —— 马欣雨，周楠，郑婷玮
 
-G15: 
+G15: RNA-Seq 数据分析及生物学信息可视化研究：https://github.com/WHK0609/Group15_Final_Project ——应瑛琦，和菊芳，王皓坤
 
 G16: (注意⚠️: 无该小组)
 
