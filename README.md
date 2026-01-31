@@ -50,7 +50,7 @@ G10: City Air Quality Analytics Dashboard: [GitHub Link](https://github.com/Suki
 
 G11: 金属硫化物材料稳定性与电子性质研究：https://github.com/zzw-user-clude/Group11-Metal-sulfides-analysis —— 刘焕敏，郑智文，年旭丰，蒋坤宏
 
-G12: 
+G12: 印度手机用户的行为可视化网站大屏：https://github.com/HeJunhui-PKUSZ/Group12-Visualization-Dashboard-of-Indian-Mobile-Phone-Users-Behavior  —— 何俊辉、张骋旭、陆胤、陈安杰
 
 G13: 珠三角九市大气污染时空分布特征及影响因素分析：https://github.com/bijiaqi77/Group-13 —— 毕佳琪，王舒妍，杨宗贵
 
