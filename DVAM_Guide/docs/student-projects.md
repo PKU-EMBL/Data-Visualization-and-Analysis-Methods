@@ -1,53 +1,12 @@
-# Data Visualization and Analysis Methods
+# 学生作品
 
-<p align="center">
-  <img src="DVAM_Guide/docs/img/logo.png" alt="PKU EMBL Yu's Lab" width="520">
-</p>
+<div class="dvam-lead" markdown>
+2025–2026 Fall 学期共归档 17 个团队项目，覆盖生态环境、城市计算、生物信息学、材料科学、交通与消费行为等主题。
+</div>
 
-<p align="center">
-  <strong>PKU EMBL · Course Documentation · 2025–2026 Fall</strong>
-</p>
+## 项目索引
 
-本仓库汇总 Data Visualization and Analysis Methods（DVAM）课程文档、课程项目要求与学生作品。课程以 Python 与 R 为主要技术栈，强调从研究问题、数据质量和视觉编码出发，完成可复现、可解释、可交流的数据分析。
-
-This repository contains the documentation, final-project guidance, and student work for the Data Visualization and Analysis Methods course at PKU EMBL.
-
-## Documentation
-
-- [课程首页](DVAM_Guide/docs/index.md)
-- [环境准备](DVAM_Guide/docs/Prerequisites_guild.md)
-- [Lecture 01 · 从数据到证据](DVAM_Guide/docs/lecture1.md)
-- [Lecture 02 · 跨语言工作流](DVAM_Guide/docs/lecture2.md)
-- [课程项目要求](DVAM_Guide/docs/final-project.md)
-- [学生作品归档](DVAM_Guide/docs/student-projects.md)
-- [工具与资源索引](DVAM_Guide/docs/api/index.md)
-
-文档使用 MkDocs Material 构建，并已按 Read the Docs 的标准构建配置组织。
-
-## Final project
-
-### Requirements
-
-1. 选题可结合团队专业背景，但需形成明确的研究问题；
-2. 每组最多 4 人；
-3. 使用有研究意义的数据集完成可视化与分析；
-4. 提交详细 README 与技术报告；
-5. 用户友好的项目网站为可选交付；
-6. 提交由全体成员确认并签署的贡献表；
-7. Fork 本仓库，并通过 Pull Request 添加团队项目外部链接。
-
-### Required materials
-
-- [Final recap and project brief](DVAM_Dec_30_2025.pdf)
-- [Final Project Group Signing Sheet](DVAM_Contribution_Sheet.pdf)
-
-> 未提交签署版贡献表时，项目材料不完整。贡献比例须合计 100%，外部数据、代码、文字和图形必须按学术规范引用。
-
-## Student projects
-
-### Fall 2025–2026
-
-| Group | Project | Team |
+| Group | 项目 | 团队成员 |
 | --- | --- | --- |
 | G1 | [Sweden Biodiversity and Climate Information Facility Interactive Visualization Platform](https://github.com/zhaorui-bi/DVAM-Group-1-Final-Project) | 姜肇瑞、徐子洋、程梓雄、范竞元 |
 | G2 | [Beijing Air Quality Visualization and Forecast Platform](https://github.com/1lizhongyuan/Group2-AirQuality-visualization-forecast) | 李忠远、史恒震、肖晟 |
@@ -67,29 +26,42 @@ This repository contains the documentation, final-project guidance, and student 
 | G17 | [Chinese National Geographic Products](https://github.com/JinQiangShi/Chinese-Nationnal-Geographic-Products) | 石金强、宋帅臻 |
 | G18 | [交通边界对即时配送的阻碍效应——以北京市为例](https://github.com/yundouzi/Group18--Transportation-Boundaries-and-On-Time-Delivery) | 范思琪、陈妮、徐静雯、王骞若 |
 
-本学期没有 G16，因此共归档 17 个项目。
+!!! info "编号说明"
+    本学期没有 G16，因此项目总数为 17。表格保留原始 Group ID，便于与课程记录对应。
 
-## Contributing
+## 如何阅读项目
 
-1. Fork this repository;
-2. Create a focused branch for your documentation or project-index update;
-3. Keep project titles, links, team names, and source information complete;
-4. Submit a Pull Request with a concise description of the change.
+查看项目时，不要只看最终图表。建议按以下顺序评审：
 
-For documentation problems, open a [GitHub Issue](https://github.com/PKU-EMBL/Data-Visualization-and-Analysis-Methods/issues).
+1. **问题**：README 是否快速说明研究对象、研究问题与价值？
+2. **数据**：来源、许可、时间范围、变量和清洗规则是否透明？
+3. **方法**：是否存在合理基线，方法复杂度是否与问题匹配？
+4. **图形**：主要结论是否由图形直接支持？尺度与不确定性是否完整？
+5. **复现**：能否找到环境、主入口和输出位置？
+6. **边界**：是否主动说明局限、偏差与不适用场景？
 
-## Citation
+## 主题分布
 
-```bibtex
-@misc{PKU_EMBL_DVAM,
-  author       = {{PKU-EMBL}},
-  title        = {Data Visualization and Analysis Methods},
-  year         = {2026},
-  publisher    = {GitHub},
-  howpublished = {\url{https://github.com/PKU-EMBL/Data-Visualization-and-Analysis-Methods}}
-}
-```
+<div class="dvam-grid dvam-grid--three" markdown>
 
-## License
+<div class="dvam-card" markdown>
+### 环境与城市
 
-See [LICENSE](LICENSE) for details.
+空气质量、水环境、雨水管理、甲烷排放、交通边界与区域生态。
+</div>
+
+<div class="dvam-card" markdown>
+### 生命科学
+
+耐药细菌、蛋白质互作、RNA-Seq、生物多样性与海洋鱼类采样。
+</div>
+
+<div class="dvam-card" markdown>
+### 材料与行为
+
+MOF、金属硫化物、碳减排、移动设备行为与地理产品分析。
+</div>
+
+</div>
+
+项目链接或成员信息如需修订，请在课程仓库提交 Issue 或 Pull Request。

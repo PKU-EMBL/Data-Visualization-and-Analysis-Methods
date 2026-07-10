@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <meta name="theme-color" content="#173f35">
+{% endblock %}
+
+{% block content %}
+  {{ super() }}
+
+  {% if git_page_authors %}
+    <div class="dvam-page-meta">
+      <small>
+        Authors: {{ git_page_authors | default('enable mkdocs-git-authors-plugin') }}
+      </small>
+    </div>
+  {% endif %}
+
+  <div class="dvam-page-meta">
+    <span>PKU EMBL · Data Visualization &amp; Analysis Methods</span>
+    <a href="{{ config.repo_url }}/issues/new" target="_blank" rel="noopener">报告文档问题</a>
+  </div>
+{% endblock %}

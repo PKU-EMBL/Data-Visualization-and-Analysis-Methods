@@ -1,25 +1,31 @@
-site_name: Data Visualization and Analysis Methods
+site_name: Data Visualization & Analysis Methods
+site_description: "PKU EMBL 数据可视化与分析方法课程文档：环境、方法、实践与课程项目"
 repo_url: https://github.com/PKU-EMBL/Data-Visualization-and-Analysis-Methods
-site_author: "Zhaorui Jiang"
-copyright: "Copyright &copy; PKU EMBL Lab 2025"
+repo_name: PKU-EMBL/Data-Visualization-and-Analysis-Methods
+site_author: "Zhaorui(Elijah) JIANG"
+copyright: "Copyright &copy; PKU EMBL Lab 2025–2026"
 
 nav:
-  - Index: index.md
-  - Prerequisites: Prerequisites_guild.md
-  - Lecture1: lecture1.md
-  - Lecture2: lecture2.md
-  - Release notes: Release_notes.md
-  # - Developer guild: Developer_guild.md
+  - 首页: index.md
+  - 课程指南:
+      - 环境准备: Prerequisites_guild.md
+      - Lecture 01 · 从数据到证据: lecture1.md
+      - Lecture 02 · 跨语言工作流: lecture2.md
+  - 课程项目:
+      - 项目要求: final-project.md
+      - 学生作品: student-projects.md
+  - 资源索引: api/index.md
+  - 更新日志: Release_notes.md
 
 plugins:
+  - search:
+      lang:
+        - zh
+        - en
   - mkdocs-jupyter
   - glightbox
-  # - gen-files:
-  #     scripts:
-  #       - docs/gen_ref_pages.py
   - mkdocstrings:
       enabled: !ENV [ENABLE_MKDOCSTRINGS, true]
-      # custom_templates: templates
       default_handler: python
       handlers:
         python:
@@ -28,36 +34,47 @@ plugins:
 
 theme:
   name: material
-  custom_dir: docs/overrides
-  logo: img/ico.png
+  custom_dir: overrides
+  language: zh
+  logo: img/logo.png
   favicon: img/favicon.ico
 
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: custom
+      accent: custom
       toggle:
         icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
+        name: 切换至深色模式
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: custom
+      accent: custom
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode
+        name: 切换至浅色模式
 
   features:
     - navigation.instant
     - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
     - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.follow
+    - content.code.copy
+    - content.tabs.link
 
 markdown_extensions:
   - admonition
   - pymdownx.details
-  #- mkautodoc
   - attr_list
   - md_in_html
   - toc:
       permalink: true
-
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.highlight:
@@ -69,11 +86,22 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.keys
+  - pymdownx.snippets
 
 extra_javascript:
   - javascripts/config.js
-  - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
   - css/custom.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/PKU-EMBL/Data-Visualization-and-Analysis-Methods
+      name: DVAM on GitHub
