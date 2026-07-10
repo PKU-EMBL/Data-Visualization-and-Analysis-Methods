@@ -1,5 +1,5 @@
-site_name: Data Visualization & Analysis Methods
-site_description: "PKU EMBL 数据可视化与分析方法课程文档：环境、方法、实践与课程项目"
+site_name: 数据可视化与分析方法
+site_description: "Data Visualization and Analysis Methods · PKU EMBL 研究型方法课程文档"
 repo_url: https://github.com/PKU-EMBL/Data-Visualization-and-Analysis-Methods
 repo_name: PKU-EMBL/Data-Visualization-and-Analysis-Methods
 site_author: "Zhaorui(Elijah) JIANG"
@@ -36,8 +36,8 @@ theme:
   name: material
   custom_dir: overrides
   language: zh
-  logo: img/logo.png
-  favicon: img/favicon.ico
+  logo: img/yu-lab-logo.png
+  favicon: img/yu-lab-logo.png
 
   palette:
     - media: "(prefers-color-scheme: light)"
@@ -58,7 +58,6 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.tabs
     - navigation.sections
     - navigation.indexes
     - navigation.top
@@ -101,6 +100,7 @@ extra_css:
   - css/custom.css
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/PKU-EMBL/Data-Visualization-and-Analysis-Methods

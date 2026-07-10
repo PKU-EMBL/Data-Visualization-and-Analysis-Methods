@@ -2,7 +2,12 @@
 
 {% block extrahead %}
   {{ super() }}
-  <meta name="theme-color" content="#173f35">
+  <meta name="theme-color" content="#1f4852">
+{% endblock %}
+
+{% block announce %}
+  <strong>2025–2026 课程文档</strong> ·
+  以研究问题为起点，以可复现证据链为核心
 {% endblock %}
 
 {% block content %}
@@ -17,7 +22,7 @@
   {% endif %}
 
   <div class="dvam-page-meta">
-    <span>PKU EMBL · Data Visualization &amp; Analysis Methods</span>
+    <span>Data Visualization &amp; Analysis Methods · Problem-driven, evidence-aware, reproducible.</span>
     <a href="{{ config.repo_url }}/issues/new" target="_blank" rel="noopener">报告文档问题</a>
   </div>
 {% endblock %}

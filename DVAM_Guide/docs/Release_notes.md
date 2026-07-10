@@ -1,7 +1,7 @@
 # 更新日志
 
 <section class="dvam-release" markdown>
-<span class="dvam-eyebrow">Current documentation release</span>
+<span class="course-kicker">Current documentation release</span>
 
 ## v0.2.0 · 2026-07-10
 
@@ -12,7 +12,8 @@
 
 ### 视觉与排版
 
-- 采用与 PKU EMBL 标识协调的深绿、金色、纸白配色；
+- 与 Environmental Bioinformatics Methods 共用蓝灰、暖棕与纸白设计语言；
+- 将新版 Yu's Lab 圆形标识用于站点 Logo、Favicon 与首页课程概览；
 - 建立首页 Hero、统计信息、课程卡片、提示框与响应式布局；
 - 中文优先使用仿宋字体栈，英文、数字与西文标点优先使用 Times New Roman；
 - 保留代码专用等宽字体，改善可读性；
@@ -21,7 +22,7 @@
 ### 信息架构
 
 - 重组为首页、课程指南、课程项目、学生作品、资源索引与更新日志；
-- 增加中文 / 英文搜索、顶部导航、章节导航、返回顶部与代码复制；
+- 增加中文 / 英文搜索、书籍式侧边导航、章节导航、返回顶部与代码复制；
 - 更新 Read the Docs v2 构建配置与依赖范围；
 - 补充页面级反馈入口与 GitHub 社交链接。
 

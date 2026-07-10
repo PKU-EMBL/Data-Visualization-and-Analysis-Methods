@@ -3,25 +3,28 @@ hide:
   - toc
 ---
 
-# Data Visualization & Analysis Methods
+# 数据可视化与分析方法
 
-<section class="dvam-hero" markdown>
-<div class="dvam-hero__content" markdown>
-<img src="img/logo.png" alt="PKU EMBL Yu's Lab" class="dvam-hero__logo" />
+<p class="page-lead">Data Visualization and Analysis Methods · 面向数据分析与生命科学学习者的研究型方法课程</p>
 
-<span class="dvam-eyebrow">PKU EMBL · Course Documentation</span>
+<section class="course-hero" markdown>
+<div class="course-hero__main" markdown>
+
+<span class="course-kicker">Data Visualization & Analysis · 2025–2026</span>
 
 ## 从数据到证据，从图形到洞见
 
 本课程以 **Python + R** 为主要技术栈，围绕数据整理、视觉编码、统计分析、可复现工作流与研究型项目展开。目标不是“画出一张图”，而是建立一套能够解释问题、检验假设并清晰传达证据的方法体系。
 
-<div class="dvam-actions" markdown>
-[开始学习](Prerequisites_guild.md){ .md-button .md-button--primary }
-[查看课程项目](final-project.md){ .md-button }
+<div class="course-actions" markdown>
+[开始学习](Prerequisites_guild.md){ .course-button .course-button--primary }
+[查看课程项目](final-project.md){ .course-button }
 </div>
 </div>
 
-<aside class="dvam-hero__panel" markdown>
+<aside class="course-hero__aside" markdown>
+<img src="img/yu-lab-logo.png" alt="PKU EMBL Yu's Lab" class="course-hero__logo off-glb" />
+
 **课程概览**
 
 - 面向对象：数据分析与生命科学方向学习者
@@ -32,7 +35,7 @@ hide:
 </aside>
 </section>
 
-<div class="dvam-stats" markdown>
+<div class="dvam-stats course-stats" markdown>
 <div markdown>
 **5**
 
