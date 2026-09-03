@@ -42,7 +42,7 @@ This is a **graduate-level course** taught by **Ke Yu**. It meets every **Tuesda
 
 ## Schedule
 
-The homepage organizes the schedule as **# · Date · Description · Reading Material · Deadlines**. The course starts with AI-assisted simple visualization, then covers a compact set of essential tools based on [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/), two sessions each for Python and R, a short Rust/Julia survey, and an extended metagenomics block. Reading Material lists the planned resources, while Deadlines will be announced by the instructor.
+The homepage organizes the schedule as **# · Date · Description · Reading Material · Deadlines**. The course starts with AI-assisted visualization, then covers a compact set of essential tools based on [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/), Python and R sessions that build from simple to advanced visualization, a short Rust/Julia survey, and an extended metagenomics block. Advanced visualization also introduces QGIS, Python geospatial and atmospheric tools, and the scverse/OmicVerse ecosystem. Reading Material lists the planned resources, while Deadlines will be announced by the instructor.
 
 ## Documentation
 

@@ -39,6 +39,26 @@ This page groups official documentation by analytical task. Tools change over ti
 | tidyr | Reshape tidy data | [tidyr Documentation](https://tidyr.tidyverse.org/) |
 | rpy2 | Call R from Python | [rpy2 Documentation](https://rpy2.github.io/doc/latest/html/) |
 
+## Scientific Visualization
+
+These tools extend Python and R workflows to geospatial, earth-science, atmospheric, single-cell, and multi-omics data.
+
+| Tool | Typical task | Official entry point |
+| --- | --- | --- |
+| QGIS | Explore, analyze, and publish raster, vector, mesh, and point-cloud data | [QGIS repository](https://github.com/qgis/QGIS) |
+| xarray | Work with labeled multidimensional arrays, NetCDF, and climate or earth-science data | [xarray Documentation](https://docs.xarray.dev/en/stable/) |
+| Cartopy | Map data with coordinate reference systems and projections | [Cartopy Documentation](https://cartopy.readthedocs.io/stable/) |
+| GeoPandas | Plot vector layers, joins, and thematic maps | [Mapping and plotting](https://geopandas.org/en/stable/docs/user_guide/mapping.html) |
+| PyGMT | Create publication-quality maps and geophysical figures | [PyGMT Documentation](https://www.pygmt.org/latest/) |
+| MetPy | Analyze weather data and create meteorological plots | [MetPy Documentation](https://unidata.github.io/MetPy/latest/) |
+| Py-ART | Process and visualize weather-radar data | [Py-ART Documentation](https://arm-doe.github.io/pyart/) |
+| wrf-python | Diagnose and plot output from the WRF model | [Plotting examples](https://wrf-python.readthedocs.io/en/main/plot.html) |
+| Iris | Analyze and visualize multidimensional earth-science data | [Iris Documentation](https://scitools-iris.readthedocs.io/en/stable/) |
+| scverse | Organize single-cell and multimodal analysis workflows | [Getting Started](https://scverse.org/learn/) |
+| Scanpy | Plot embeddings, expression summaries, and clustering results | [Plotting tutorials](https://scanpy.scverse.org/en/stable/tutorials/plotting/index.html) |
+| OmicVerse | Explore transcriptomics, single-cell, spatial, and multi-omics data | [OmicVerse Documentation](https://omicverse.readthedocs.io/en/latest/index.html) |
+| Vitessce | Build linked interactive views for spatial and single-cell data | [Vitessce Documentation](https://vitessce.io/docs/) |
+
 ## Data Discovery
 
 - [Database Commons](https://ngdc.cncb.ac.cn/databasecommons/) provides a directory of life-science databases.
