@@ -9,9 +9,9 @@ hide:
 
 **Fall 2026–2027**
 
-This course covers modern methods and applications of data visualization and analysis, with a focus on reproducible research and **Vibe Coding**. The course will start with research-question design, data auditing, visual encoding, and statistical interpretation. We will then discuss how Python, R, and AI coding assistants can be combined to explore data, generate code, and build visual workflows through natural-language interaction. We will next examine cross-language analysis, multi-step analytical workflows, and the challenges of evaluating code, figures, uncertainty, and reproducibility.
+This graduate course builds practical foundations for data visualization and analysis. It is designed for students who may be new to programming or computational research. We begin with the tools that make analysis possible: Linux and the command line, files and processes, shell pipelines, editors, version control, project environments, and reproducible workflows. Students then learn Python and R step by step, moving from basic syntax to data frames, tidy data, visual encoding, statistical summaries, and clear figures.
 
-Our goal is that students learn from current research papers, discuss suggested readings in class, and apply these ideas in an original team project. Students will also learn how to use AI-assisted tools responsibly while keeping analytical decisions transparent, testable, and reproducible.
+The second half applies these skills to biological data, with an emphasis on metagenomics. We will work with sequencing reads, contigs, metagenome-assembled genomes, taxonomic profiles, functional annotations, and compositional data. Students will use Python and R to build and critique visualizations, document their decisions, and complete an original team project. After the core foundations, the course introduces Agentic Coding and Vibe Coding as practical tools for explanation, drafting, debugging, and workflow automation. We emphasize understanding, code quality, privacy, and verification rather than dependence on agents.
 
 ## Course Staff { #people }
 
@@ -48,26 +48,26 @@ Before the first meeting, complete the [prerequisites and environment setup](Pre
 
 ## Schedule { #schedule }
 
-Lectures meet on Tuesdays from 08:30 to 11:30 in C303. The schedule below organizes the course topics and project work. Announcements from Instructor Ke Yu take precedence.
+Lectures meet on Tuesdays from 08:30 to 11:30 in C303. The schedule follows a foundation-first sequence: command-line tools, programming, reproducible workflows, visualization, and then metagenomics applications. Announcements from Instructor Ke Yu take precedence.
 
-| Date | Description | Reading Material | Deadlines |
-| --- | --- | --- | --- |
-| Tue Sep 8, 2026 | Course overview; from research questions to evidence |  |  |
-| Tue Sep 15, 2026 | Research questions, analysis units, outcomes, and comparisons |  |  |
-| Tue Sep 22, 2026 | Tidy data, data dictionaries, and the minimum data audit |  |  |
-| Tue Oct 13, 2026 | Visual tasks and the grammar of visual encoding |  |  |
-| Tue Oct 20, 2026 | Distributions, comparisons, raw observations, and uncertainty |  |  |
-| Tue Oct 27, 2026 | Relationships, time, composition, and spatial displays |  |  |
-| Tue Nov 3, 2026 | Figure integrity, interpretation, and reproducible Python output |  |  |
-| Tue Nov 10, 2026 | Python and R ecosystems: choosing tools by task |  |  |
-| Tue Nov 17, 2026 | DataFrame contracts and Python/R type conversion |  |  |
-| Tue Nov 24, 2026 | Positron, interpreters, kernels, and project environments |  |  |
-| Tue Dec 1, 2026 | Calling R from Python with `rpy2` |  |  |
-| Tue Dec 8, 2026 | Multi-panel figures and research-oriented visual narratives |  |  |
-| Tue Dec 15, 2026 | Reproducibility, Git, README structure, and provenance |  |  |
-| Tue Dec 22, 2026 | Project studio: question, data, methods, and baseline review |  |  |
-| Tue Dec 29, 2026 | Peer review, figure audit, limitations, and communication |  |  |
-| Tue Jan 5, 2027 | Final project delivery and reflection |  |  |
+| # | Date | Description | Reading Material | Deadlines |
+| --- | --- | --- | --- | --- |
+| 1 | Tue Sep 8, 2026 | Course Overview + Introduction to the Shell | [MIT: Course Overview + Introduction to the Shell](https://missing.csail.mit.edu/2026/course-shell/)<br>[MIT: Shell exercises](https://missing.csail.mit.edu/2026/course-shell/#exercises) |  |
+| 2 | Tue Sep 15, 2026 | Command-line Environment: files, paths, pipes, and data streams | [MIT: Command-line Environment](https://missing.csail.mit.edu/2026/command-line-environment/)<br>[Bash Reference Manual](https://www.gnu.org/software/bash/manual/bash.html) |  |
+| 3 | Tue Sep 22, 2026 | Development Environment and Tools: editors, terminals, notebooks, and help | [MIT: Development Environment and Tools](https://missing.csail.mit.edu/2026/development-environment/)<br>[JupyterLab Documentation](https://jupyterlab.readthedocs.io/)<br>[Positron Documentation](https://positron.posit.co/) |  |
+| 4 | Tue Oct 13, 2026 | Debugging and Profiling: reading errors, checking assumptions, and finding bottlenecks | [MIT: Debugging and Profiling](https://missing.csail.mit.edu/2026/debugging-profiling/)<br>[Python: `pdb` debugger](https://docs.python.org/3/library/pdb.html) |  |
+| 5 | Tue Oct 20, 2026 | Version Control with Git and GitHub | [MIT: Version Control and Git](https://missing.csail.mit.edu/2026/version-control/)<br>[Git Documentation](https://git-scm.com/doc)<br>[GitHub: Hello World](https://docs.github.com/en/get-started/start-your-journey/hello-world) |  |
+| 6 | Tue Oct 27, 2026 | Reproducible Environments and Packaging: Conda, venv, and project structure | [MIT: Packaging and Shipping Code](https://missing.csail.mit.edu/2026/shipping-code/)<br>[Conda: Managing environments](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html)<br>[Python Packaging User Guide](https://packaging.python.org/en/latest/) |  |
+| 7 | Tue Nov 3, 2026 | Python Foundations for Data Analysis: types, functions, files, and DataFrames | [Python Tutorial](https://docs.python.org/3/tutorial/)<br>[NumPy: Quickstart](https://numpy.org/doc/stable/user/quickstart.html)<br>[pandas: Getting started](https://pandas.pydata.org/docs/getting_started/index.html) |  |
+| 8 | Tue Nov 10, 2026 | R Foundations, Tidy Data, and Visual Encoding | [An Introduction to R](https://cran.r-project.org/doc/manuals/r-release/R-intro.html)<br>[R for Data Science](https://r4ds.hadley.nz/)<br>[ggplot2 Documentation](https://ggplot2.tidyverse.org/) |  |
+| 9 | Tue Nov 17, 2026 | Data Wrangling, Statistical Summaries, and Figure Integrity across Python and R | [pandas: User Guide](https://pandas.pydata.org/docs/user_guide/index.html)<br>[dplyr Documentation](https://dplyr.tidyverse.org/)<br>[SciPy Statistics](https://docs.scipy.org/doc/scipy/reference/stats.html)<br>[Matplotlib Documentation](https://matplotlib.org/stable/) |  |
+| 10 | Tue Nov 24, 2026 | Code Quality: tests, review, documentation, and reproducible figures | [MIT: Code Quality](https://missing.csail.mit.edu/2026/code-quality/)<br>[Seaborn Documentation](https://seaborn.pydata.org/)<br>[R Packages](https://r-pkgs.org/) |  |
+| 11 | Tue Dec 1, 2026 | Agentic Coding and Vibe Coding for Scientific Workflows | [MIT: Agentic Coding](https://missing.csail.mit.edu/2026/agentic-coding/)<br>[MIT: Development Environment and Tools](https://missing.csail.mit.edu/2026/development-environment/) |  |
+| 12 | Tue Dec 8, 2026 | Beyond the Code: communication, collaboration, automation, and responsible tool use | [MIT: Beyond the Code](https://missing.csail.mit.edu/2026/beyond-code/)<br>[GitHub Documentation](https://docs.github.com/) |  |
+| 13 | Tue Dec 15, 2026 | Metagenomics Data: reads, contigs, MAGs, and quality control | [QIIME 2 Documentation](https://docs.qiime2.org/)<br>[Kraken 2 Manual](https://github.com/DerrickWood/kraken2/wiki/Manual)<br>[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) |  |
+| 14 | Tue Dec 22, 2026 | Taxonomic, Functional, and Diversity Visualization for Metagenomics | [MetaPhlAn](https://github.com/biobakery/MetaPhlAn)<br>[HUMAnN](https://github.com/biobakery/humann)<br>[phyloseq](https://doi.org/10.1371/journal.pcbi.1003531)<br>[anvi'o Documentation](https://anvio.org/learn/) |  |
+| 15 | Tue Dec 29, 2026 | Guest Lecture: Deep Learning for Scientific Data (I) — [Shengwei Hou](https://www.sustech.edu.cn/zh/faculties/houshengwei.html) |  |  |
+| 16 | Tue Jan 5, 2027 | Guest Lecture: Deep Learning for Scientific Data (II) — [Shengwei Hou](https://www.sustech.edu.cn/zh/faculties/houshengwei.html) |  |  |
 
 ## Grading { #grading }
 

@@ -864,8 +864,8 @@
 <h1 class="course-site-title" id="methodologies-of-data-visualization-and-analysis">Methodologies of Data Visualization and Analysis<a class="headerlink" href="#methodologies-of-data-visualization-and-analysis" title="Permanent link">¶</a></h1>
 <h2 id="intro">Course Overview<a class="headerlink" href="#intro" title="Permanent link">¶</a></h2>
 <p><strong>Fall 2026–2027</strong></p>
-<p>This course covers modern methods and applications of data visualization and analysis, with a focus on reproducible research and <strong>Vibe Coding</strong>. The course will start with research-question design, data auditing, visual encoding, and statistical interpretation. We will then discuss how Python, R, and AI coding assistants can be combined to explore data, generate code, and build visual workflows through natural-language interaction. We will next examine cross-language analysis, multi-step analytical workflows, and the challenges of evaluating code, figures, uncertainty, and reproducibility.</p>
-<p>Our goal is that students learn from current research papers, discuss suggested readings in class, and apply these ideas in an original team project. Students will also learn how to use AI-assisted tools responsibly while keeping analytical decisions transparent, testable, and reproducible.</p>
+<p>This graduate course builds practical foundations for data visualization and analysis. It is designed for students who may be new to programming or computational research. We begin with the tools that make analysis possible: Linux and the command line, files and processes, shell pipelines, editors, version control, project environments, and reproducible workflows. Students then learn Python and R step by step, moving from basic syntax to data frames, tidy data, visual encoding, statistical summaries, and clear figures.</p>
+<p>The second half applies these skills to biological data, with an emphasis on metagenomics. We will work with sequencing reads, contigs, metagenome-assembled genomes, taxonomic profiles, functional annotations, and compositional data. Students will use Python and R to build and critique visualizations, document their decisions, and complete an original team project. AI-assisted coding is introduced later as an optional tool for explanation, drafting, and debugging; the course emphasizes understanding and verification rather than dependence on agents.</p>
 <h2 id="people">Course Staff<a class="headerlink" href="#people" title="Permanent link">¶</a></h2>
 <h3 id="instructors">Instructors<a class="headerlink" href="#instructors" title="Permanent link">¶</a></h3>
 <div class="course-people">
@@ -888,10 +888,11 @@
 <p>This is a <strong>graduate-level course</strong> taught by <strong>Ke Yu</strong>. It meets every <strong>Tuesday, 08:30–11:30</strong>, in <strong>C303</strong> during <strong>Fall 2026–2027</strong>, with an enrollment cap of <strong>80 students</strong>.</p>
 <p>Before the first meeting, complete the <a href="Prerequisites_guild/">prerequisites and environment setup</a>.</p>
 <h2 id="schedule">Schedule<a class="headerlink" href="#schedule" title="Permanent link">¶</a></h2>
-<p>Lectures meet on Tuesdays from 08:30 to 11:30 in C303. The schedule below organizes the course topics and project work. Announcements from Instructor Ke Yu take precedence.</p>
+<p>Lectures meet on Tuesdays from 08:30 to 11:30 in C303. The schedule follows a foundation-first sequence: command-line tools, programming, reproducible workflows, visualization, and then metagenomics applications. Announcements from Instructor Ke Yu take precedence.</p>
 <table>
 <thead>
 <tr>
+<th>#</th>
 <th>Date</th>
 <th>Description</th>
 <th>Reading Material</th>
@@ -900,99 +901,115 @@
 </thead>
 <tbody>
 <tr>
+<td>1</td>
 <td>Tue Sep 8, 2026</td>
-<td>Course overview; from research questions to evidence</td>
-<td></td>
+<td>Course Overview + Introduction to the Shell</td>
+<td><a href="https://missing.csail.mit.edu/2026/course-shell/">MIT: Course Overview + Introduction to the Shell</a></td>
 <td></td>
 </tr>
 <tr>
+<td>2</td>
 <td>Tue Sep 15, 2026</td>
-<td>Research questions, analysis units, outcomes, and comparisons</td>
-<td></td>
+<td>Command-line Environment: files, paths, pipes, and data streams</td>
+<td><a href="https://missing.csail.mit.edu/2026/command-line-environment/">MIT: Command-line Environment</a></td>
 <td></td>
 </tr>
 <tr>
+<td>3</td>
 <td>Tue Sep 22, 2026</td>
-<td>Tidy data, data dictionaries, and the minimum data audit</td>
-<td></td>
+<td>Development Environment and Tools: editors, terminals, notebooks, and help</td>
+<td><a href="https://missing.csail.mit.edu/2026/development-environment/">MIT: Development Environment and Tools</a></td>
 <td></td>
 </tr>
 <tr>
+<td>4</td>
 <td>Tue Oct 13, 2026</td>
-<td>Visual tasks and the grammar of visual encoding</td>
-<td></td>
+<td>Version Control with Git and GitHub</td>
+<td><a href="https://missing.csail.mit.edu/2026/version-control/">MIT: Version Control and Git</a></td>
 <td></td>
 </tr>
 <tr>
+<td>5</td>
 <td>Tue Oct 20, 2026</td>
-<td>Distributions, comparisons, raw observations, and uncertainty</td>
-<td></td>
+<td>Reproducible Environments and Packaging: Conda, venv, and project structure</td>
+<td><a href="https://missing.csail.mit.edu/2026/shipping-code/">MIT: Packaging and Shipping Code</a><br><a href="https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html">Conda: Managing environments</a></td>
 <td></td>
 </tr>
 <tr>
+<td>6</td>
 <td>Tue Oct 27, 2026</td>
-<td>Relationships, time, composition, and spatial displays</td>
-<td></td>
+<td>Python Foundations for Data Analysis: types, functions, files, and DataFrames</td>
+<td><a href="https://docs.python.org/3/tutorial/">Python Tutorial</a><br><a href="https://pandas.pydata.org/docs/getting_started/index.html">pandas: Getting started</a></td>
 <td></td>
 </tr>
 <tr>
+<td>7</td>
 <td>Tue Nov 3, 2026</td>
-<td>Figure integrity, interpretation, and reproducible Python output</td>
-<td></td>
+<td>R Foundations and Tidy Data: vectors, data frames, and tidyverse</td>
+<td><a href="https://cran.r-project.org/doc/manuals/r-release/R-intro.html">An Introduction to R</a><br><a href="https://r4ds.hadley.nz/">R for Data Science</a></td>
 <td></td>
 </tr>
 <tr>
+<td>8</td>
 <td>Tue Nov 10, 2026</td>
-<td>Python and R ecosystems: choosing tools by task</td>
-<td></td>
+<td>Data Wrangling Across Python and R: joins, reshaping, missingness, and provenance</td>
+<td><a href="https://pandas.pydata.org/docs/user_guide/index.html">pandas: User Guide</a><br><a href="https://dplyr.tidyverse.org/">dplyr Documentation</a></td>
 <td></td>
 </tr>
 <tr>
+<td>9</td>
 <td>Tue Nov 17, 2026</td>
-<td>DataFrame contracts and Python/R type conversion</td>
-<td></td>
+<td>Visual Encoding and Grammar of Graphics: from questions to figures</td>
+<td><a href="https://ggplot2.tidyverse.org/">ggplot2 Documentation</a></td>
 <td></td>
 </tr>
 <tr>
+<td>10</td>
 <td>Tue Nov 24, 2026</td>
-<td>Positron, interpreters, kernels, and project environments</td>
-<td></td>
+<td>Statistical Summaries, Uncertainty, and Figure Integrity</td>
+<td><a href="https://docs.scipy.org/doc/scipy/reference/stats.html">SciPy Statistics</a><br><a href="https://seaborn.pydata.org/">Seaborn Documentation</a></td>
 <td></td>
 </tr>
 <tr>
+<td>11</td>
 <td>Tue Dec 1, 2026</td>
-<td>Calling R from Python with <code>rpy2</code></td>
-<td></td>
+<td>Metagenomics Data: reads, contigs, MAGs, and quality control</td>
+<td><a href="https://docs.qiime2.org/">QIIME 2 Documentation</a><br><a href="https://github.com/DerrickWood/kraken2/wiki/Manual">Kraken 2 Manual</a></td>
 <td></td>
 </tr>
 <tr>
+<td>12</td>
 <td>Tue Dec 8, 2026</td>
-<td>Multi-panel figures and research-oriented visual narratives</td>
-<td></td>
+<td>Taxonomic Profiling and Abundance Visualization</td>
+<td><a href="https://github.com/biobakery/MetaPhlAn">MetaPhlAn</a><br><a href="https://docs.qiime2.org/">QIIME 2 Documentation</a></td>
 <td></td>
 </tr>
 <tr>
+<td>13</td>
 <td>Tue Dec 15, 2026</td>
-<td>Reproducibility, Git, README structure, and provenance</td>
-<td></td>
+<td>Functional Profiling, Diversity, and Genome-resolved Visualization</td>
+<td><a href="https://github.com/biobakery/humann">HUMAnN</a><br><a href="https://doi.org/10.1371/journal.pcbi.1003531">phyloseq</a><br><a href="https://anvio.org/learn/">anvi'o Documentation</a></td>
 <td></td>
 </tr>
 <tr>
+<td>14</td>
 <td>Tue Dec 22, 2026</td>
-<td>Project studio: question, data, methods, and baseline review</td>
+<td>Guest Lecture: Deep Learning for Scientific Data (I) — <a href="https://www.sustech.edu.cn/zh/faculties/houshengwei.html">Shengwei Hou</a></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
+<td>15</td>
 <td>Tue Dec 29, 2026</td>
-<td>Peer review, figure audit, limitations, and communication</td>
+<td>Guest Lecture: Deep Learning for Scientific Data (II) — <a href="https://www.sustech.edu.cn/zh/faculties/houshengwei.html">Shengwei Hou</a></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
+<td>16</td>
 <td>Tue Jan 5, 2027</td>
-<td>Final project delivery and reflection</td>
-<td></td>
+<td>Project presentations and next steps</td>
+<td><a href="final-project/">Final Project</a></td>
 <td></td>
 </tr>
 </tbody>

@@ -14,6 +14,7 @@ This page groups official documentation and common resources by analytical task.
 | Positron | Python / R data-science IDE | [Positron Documentation](https://positron.posit.co/) |
 | Git | Version control | [Git Documentation](https://git-scm.com/doc) |
 | GitHub | Collaboration, Issues, and Pull Requests | [GitHub Docs](https://docs.github.com/) |
+| The Missing Semester | Command-line tools, development environments, version control, and packaging | [Course site](https://missing.csail.mit.edu/) |
 
 ## Python Data Stack
 

@@ -10,7 +10,7 @@
   <strong>PKU EMBL · Course Documentation · Fall 2026–2027</strong>
 </p>
 
-This repository contains the current English documentation for **Methodologies of Data Visualization and Analysis** at PKU EMBL. The course introduces research-oriented visualization, statistical analysis, reproducible workflows, and Vibe Coding with Python and R.
+This repository contains the current English documentation for **Methodologies of Data Visualization and Analysis** at PKU EMBL. The course introduces Linux command-line tools, Python, R, data visualization, reproducible research, and metagenomics analysis. AI-assisted coding is introduced later as an optional support tool.
 
 ## Course information
 
@@ -27,9 +27,9 @@ This repository contains the current English documentation for **Methodologies o
 
 **Fall 2026–2027**
 
-This course covers modern methods and applications of data visualization and analysis, with a focus on reproducible research and **Vibe Coding**. The course will start with research-question design, data auditing, visual encoding, and statistical interpretation. We will then discuss how Python, R, and AI coding assistants can be combined to explore data, generate code, and build visual workflows through natural-language interaction. We will next examine cross-language analysis, multi-step analytical workflows, and the challenges of evaluating code, figures, uncertainty, and reproducibility.
+This graduate course builds practical foundations for data visualization and analysis. It is designed for students who may be new to programming or computational research. We begin with the tools that make analysis possible: Linux and the command line, files and processes, shell pipelines, editors, version control, project environments, and reproducible workflows. Students then learn Python and R step by step, moving from basic syntax to data frames, tidy data, visual encoding, statistical summaries, and clear figures.
 
-Our goal is that students learn from current research papers, discuss suggested readings in class, and apply these ideas in an original team project. Students will also learn how to use AI-assisted tools responsibly while keeping analytical decisions transparent, testable, and reproducible.
+The second half applies these skills to biological data, with an emphasis on metagenomics. We will work with sequencing reads, contigs, metagenome-assembled genomes, taxonomic profiles, functional annotations, and compositional data. Students will use Python and R to build and critique visualizations, document their decisions, and complete an original team project. After the core foundations, the course introduces Agentic Coding and Vibe Coding as practical tools for explanation, drafting, debugging, and workflow automation. We emphasize understanding, code quality, privacy, and verification rather than dependence on agents.
 
 ## Course Staff
 
@@ -42,7 +42,7 @@ This is a **graduate-level course** taught by **Ke Yu**. It meets every **Tuesda
 
 ## Schedule
 
-The homepage organizes the schedule as **Date · Description · Reading Material · Deadlines**. Reading Material and Deadlines are currently left blank and will be updated when the course information is released.
+The homepage organizes the schedule as **# · Date · Description · Reading Material · Deadlines**. The first sessions follow the command-line and development-tool sequence from [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/), followed by Python, R, visualization, metagenomics applications, Agentic Coding, Vibe Coding, and Beyond the Code. Reading Material lists the planned resources, while Deadlines will be announced by the instructor.
 
 ## Documentation
 

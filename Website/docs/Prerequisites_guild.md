@@ -1,6 +1,8 @@
 # Prerequisites
 
-Before the first class, install Python, R, and either JupyterLab or Positron. Use one project environment and record its dependencies.
+Basic programming experience is welcome but not required. Before the first class, install Python, R, and either JupyterLab or Positron. You should also have access to a Unix-like shell: Linux or macOS, or WSL on Windows. Use one project environment and record its dependencies.
+
+The course follows a foundation-first workflow similar to [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/). Its shell, command-line, development-environment, version-control, and packaging lessons are useful preparation.
 
 ## Recommended setup
 
