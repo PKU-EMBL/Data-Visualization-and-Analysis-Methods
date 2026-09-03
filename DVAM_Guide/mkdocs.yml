@@ -1,21 +1,19 @@
-site_name: 数据可视化与分析方法
-site_description: "Data Visualization and Analysis Methods · PKU EMBL 研究型方法课程文档"
-repo_url: https://github.com/PKU-EMBL/Data-Visualization-and-Analysis-Methods
-repo_name: PKU-EMBL/Data-Visualization-and-Analysis-Methods
+site_name: "Methodologies of Data Visualization and Analysis"
+site_description: "Methodologies of Data Visualization and Analysis · PKU EMBL course documentation"
+repo_url: https://github.com/PKU-EMBL/Methodologies-of-Data-Visualization-and-Analysis
+repo_name: PKU-EMBL/Methodologies-of-Data-Visualization-and-Analysis
 site_author: "Zhaorui(Elijah) JIANG"
-copyright: "Copyright &copy; PKU EMBL Lab 2025–2026"
+copyright: "Copyright &copy; PKU EMBL Lab 2026–2027"
 
 nav:
-  - 首页: index.md
-  - 课程指南:
-      - 环境准备: Prerequisites_guild.md
-      - Lecture 01 · 从数据到证据: lecture1.md
-      - Lecture 02 · 跨语言工作流: lecture2.md
-  - 课程项目:
-      - 项目要求: final-project.md
-      - 学生作品: student-projects.md
-  - 资源索引: api/index.md
-  - 更新日志: Release_notes.md
+  - Home: index.md
+  - Course Guide:
+      - Prerequisites: Prerequisites_guild.md
+      - Lecture 01 · From Data to Evidence: lecture1.md
+      - Lecture 02 · Cross-language Workflow: lecture2.md
+  - Course Projects:
+      - Final Project: final-project.md
+  - Resources: api/index.md
 
 plugins:
   - search:
@@ -35,7 +33,7 @@ plugins:
 theme:
   name: material
   custom_dir: overrides
-  language: zh
+  language: en
   logo: img/yu-lab-logo.png
   favicon: img/yu-lab-logo.png
 
@@ -103,5 +101,5 @@ extra:
   generator: false
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/PKU-EMBL/Data-Visualization-and-Analysis-Methods
-      name: DVAM on GitHub
+      link: https://github.com/PKU-EMBL/Methodologies-of-Data-Visualization-and-Analysis
+      name: Methodologies of Data Visualization and Analysis on GitHub

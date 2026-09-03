@@ -3,146 +3,107 @@ hide:
   - toc
 ---
 
-# 数据可视化与分析方法
+# Methodologies of Data Visualization and Analysis { .course-site-title }
 
-<p class="page-lead">Data Visualization and Analysis Methods · 面向数据分析与生命科学学习者的研究型方法课程</p>
+## Course Overview { #intro }
 
-<section class="course-hero" markdown>
-<div class="course-hero__main" markdown>
+**Fall 2026–2027**
 
-<span class="course-kicker">Data Visualization & Analysis · 2025–2026</span>
+This graduate course introduces practical methods for data visualization and analysis. Students learn to turn research questions into clear workflows, choose appropriate visual and statistical methods, and communicate reproducible results with Python and R.
 
-## 从数据到证据，从图形到洞见
+A central theme is **Vibe Coding**: using AI coding assistants to prototype and debug workflows while checking outputs with human judgment, version control, and transparent disclosure. Students apply these methods in an original team project.
 
-本课程以 **Python + R** 为主要技术栈，围绕数据整理、视觉编码、统计分析、可复现工作流与研究型项目展开。目标不是“画出一张图”，而是建立一套能够解释问题、检验假设并清晰传达证据的方法体系。
+## Course Staff { #people }
 
-<div class="course-actions" markdown>
-[开始学习](Prerequisites_guild.md){ .course-button .course-button--primary }
-[查看课程项目](final-project.md){ .course-button }
-</div>
-</div>
+### Instructors { #instructors }
 
-<aside class="course-hero__aside" markdown>
-<img src="img/yu-lab-logo.png" alt="PKU EMBL Yu's Lab" class="course-hero__logo off-glb" />
+<div class="course-people" markdown>
+<article class="course-person" markdown>
+<a href="https://see.pkusz.edu.cn/info/1012/1454.htm" target="_blank" rel="noopener"><img src="img/ke-yu.png" alt="Ke Yu" class="course-person__photo" /></a>
 
-**课程概览**
+### [Ke Yu](https://see.pkusz.edu.cn/info/1012/1454.htm)
 
-- 面向对象：数据分析与生命科学方向学习者
-- 课程学期：2025–2026 Fall
-- 核心工具：Python、R、Jupyter、Positron
-- 学习方式：概念讲解、代码实践、团队项目
-- 维护方式：GitHub Issues / Pull Request
-</aside>
-</section>
-
-<div class="dvam-stats course-stats" markdown>
-<div markdown>
-**5**
-
-核心能力模块
-</div>
-<div markdown>
-**Python + R**
-
-双语言分析工作流
-</div>
-<div markdown>
-**17**
-
-学生项目归档
-</div>
+Instructor<br>
+[yuke.sz@pku.edu.cn](mailto:yuke.sz@pku.edu.cn)
+</article>
 </div>
 
-## 课程定位
+### Course Assistants { #course-assistants }
 
-数据可视化是分析过程的一部分，而不是分析结束后的装饰。本课程强调从研究问题出发，形成“数据—方法—证据—叙事”的完整链路：
+<div class="course-people" markdown>
+<article class="course-person" markdown>
+<img src="img/zhaorui-jiang.png" alt="Zhaorui Jiang" class="course-person__photo" />
 
-<div class="dvam-grid" markdown>
+### [Zhaorui Jiang](https://zhaorui-bi.github.io/)
 
-<div class="dvam-card" markdown>
-### 数据素养
-
-识别变量类型、缺失模式、测量尺度与潜在偏差；理解一张图背后的数据生成过程。
+CA
+</article>
 </div>
 
-<div class="dvam-card" markdown>
-### 视觉推理
+## Logistics { #logistics }
 
-根据比较、分布、关系、组成与时序等任务选择合适的视觉编码，避免误导性表达。
-</div>
+This is a **graduate-level course** taught by **Ke Yu**. It meets every **Tuesday, 08:30–11:30**, in **C303** during **Fall 2026–2027**, with an enrollment cap of **80 students**.
 
-<div class="dvam-card" markdown>
-### 分析方法
+Before the first meeting, complete the [prerequisites and environment setup](Prerequisites_guild.md).
 
-从描述统计延伸到机器学习与深度学习，理解方法假设、评价指标和结论边界。
-</div>
+## Schedule { #schedule }
 
-<div class="dvam-card" markdown>
-### 可复现实践
+Lectures meet on Tuesdays from 08:30 to 11:30 in C303. The schedule below organizes the course topics and project work. Announcements from Instructor Ke Yu take precedence.
 
-使用隔离环境、版本控制、脚本化分析和清晰文档，让结果能够被复核、复用和扩展。
-</div>
-
-</div>
-
-## 学习路线
-
-| 阶段 | 核心问题 | 推荐入口 | 阶段产出 |
+| Date | Description | Reading Material | Deadlines |
 | --- | --- | --- | --- |
-| 01 · 环境准备 | 如何建立稳定、隔离、可复现的工作环境？ | [环境准备](Prerequisites_guild.md) | 可运行的 Python / R 环境 |
-| 02 · 分析基础 | 如何把原始数据转化为可信证据？ | [Lecture 01](lecture1.md) | 数据审计与基础可视化 |
-| 03 · 跨语言协作 | 如何组合 Python 与 R 的生态优势？ | [Lecture 02](lecture2.md) | 可复用的跨语言分析流程 |
-| 04 · 研究实践 | 如何从问题定义推进到公开交付？ | [项目要求](final-project.md) | README、技术报告与项目仓库 |
-| 05 · 复盘迁移 | 如何从优秀案例中抽象方法？ | [学生作品](student-projects.md) | 项目评审与改进清单 |
+| Tue Sep 8, 2026 | Course overview; from research questions to evidence |  |  |
+| Tue Sep 15, 2026 | Research questions, analysis units, outcomes, and comparisons |  |  |
+| Tue Sep 22, 2026 | Tidy data, data dictionaries, and the minimum data audit |  |  |
+| Tue Oct 13, 2026 | Visual tasks and the grammar of visual encoding |  |  |
+| Tue Oct 20, 2026 | Distributions, comparisons, raw observations, and uncertainty |  |  |
+| Tue Oct 27, 2026 | Relationships, time, composition, and spatial displays |  |  |
+| Tue Nov 3, 2026 | Figure integrity, interpretation, and reproducible Python output |  |  |
+| Tue Nov 10, 2026 | Python and R ecosystems: choosing tools by task |  |  |
+| Tue Nov 17, 2026 | DataFrame contracts and Python/R type conversion |  |  |
+| Tue Nov 24, 2026 | Positron, interpreters, kernels, and project environments |  |  |
+| Tue Dec 1, 2026 | Calling R from Python with `rpy2` |  |  |
+| Tue Dec 8, 2026 | Multi-panel figures and research-oriented visual narratives |  |  |
+| Tue Dec 15, 2026 | Reproducibility, Git, README structure, and provenance |  |  |
+| Tue Dec 22, 2026 | Project studio: question, data, methods, and baseline review |  |  |
+| Tue Dec 29, 2026 | Peer review, figure audit, limitations, and communication |  |  |
+| Tue Jan 5, 2027 | Final project delivery and reflection |  |  |
 
-## 文档导航
+## Grading { #grading }
 
-<div class="dvam-grid dvam-grid--three" markdown>
+Assessment focuses on the project process and final delivery. Official weightings and deadlines published by the instructor take precedence over this overview.
 
-<div class="dvam-card dvam-card--link" markdown>
-### [环境准备](Prerequisites_guild.md)
+- **Problem framing:** a clear, answerable research question with an explicit data scope and limitation statement;
+- **Method and visualization:** methods, visual encodings, and statistical interpretation that match the question;
+- **Reproducibility:** an environment, code, and run instructions that allow another reader to reproduce the result;
+- **Communication:** a clear, honest README, technical report, and set of figures;
+- **Collaboration:** transparent contributions, version control, and team decisions.
 
-Windows / macOS / Linux 配置建议、Conda 环境、Positron 与常见问题。
-</div>
+See the [Final Project requirements](final-project.md) for the delivery checklist, workflow, contribution form, and academic-integrity requirements.
 
-<div class="dvam-card dvam-card--link" markdown>
-### [课程讲义](lecture1.md)
+## Research Projects
 
-从研究问题、数据结构与视觉编码开始，逐步建立分析框架。
-</div>
+Teams of 2–4 students start from a real question and complete an original analysis. Each project delivers data documentation, analysis scripts, visualizations, a technical report, and a contribution record. See the [Final Project requirements](final-project.md) for the workflow and delivery checklist.
 
-<div class="dvam-card dvam-card--link" markdown>
-### [课程项目](final-project.md)
+## Course Policies { #policies }
 
-团队规模、选题、交付物、提交流程、贡献表与学术诚信要求。
-</div>
+### Academic Integrity and AI Use
 
-<div class="dvam-card dvam-card--link" markdown>
-### [学生作品](student-projects.md)
+- Cite external ideas, code, data, figures, and generative tools;
+- submit only results that the team can explain and reproduce.
 
-2025–2026 学期 17 个团队项目的主题与公开仓库。
-</div>
+### Reproducibility and Data
 
-<div class="dvam-card dvam-card--link" markdown>
-### [资源索引](api/index.md)
+- Include the environment, scripts, data-processing steps, and output locations;
+- never commit personal information, restricted data, credentials, or access tokens to a public repository.
 
-按任务整理的官方工具文档、数据资源与项目自检清单。
-</div>
+### Communication with Course Staff
 
-<div class="dvam-card dvam-card--link" markdown>
-### [更新日志](Release_notes.md)
+- Read the course documentation before raising general questions;
+- contact Instructor Ke Yu at [yuke.sz@pku.edu.cn](mailto:yuke.sz@pku.edu.cn) for course-specific questions.
 
-追踪文档结构、内容与视觉系统的重要变化。
-</div>
+## Further Information
 
-</div>
-
-!!! note "文档边界"
-    本站是课程学习与项目协作入口。软件版本、外部数据集与平台规则可能变化，执行关键操作前请以对应官方文档为准。课程考核与学术诚信要求以任课教师发布的最新通知为准。
-
-## 联系与贡献
-
-- 课程与文档维护：Zhaorui(Elijah) JIANG
-- Email：[zrjiang25@stu.pku.edu.cn](mailto:zrjiang25@stu.pku.edu.cn)
-- 反馈与修订：[GitHub Issues](https://github.com/PKU-EMBL/Data-Visualization-and-Analysis-Methods/issues)
-- 内容贡献：Fork 仓库后提交 Pull Request，并说明修改范围与信息来源。
+- [Prerequisites](Prerequisites_guild.md)
+- [Final Project](final-project.md)
+- [Course repository](https://github.com/PKU-EMBL/Methodologies-of-Data-Visualization-and-Analysis)

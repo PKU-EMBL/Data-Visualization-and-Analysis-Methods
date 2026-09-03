@@ -1,60 +1,60 @@
-# Lecture 02 · 跨语言工作流
+# Lecture 02 · Cross-language Workflow
 
 <div class="dvam-lead" markdown>
-Python 与 R 并不是互相替代的两套阵营。成熟的数据科学项目会根据任务选择生态，并通过稳定的数据结构、环境与接口把它们连接起来。
+Python and R are not competing camps. A data-science project can choose an ecosystem for each task. Stable data structures, environments, and interfaces connect the two workflows.
 </div>
 
-## 学习目标
+## Learning Objectives
 
-- 理解 Python 与 R 在数据分析流程中的互补关系；
-- 使用 DataFrame 作为跨工具协作的核心数据结构；
-- 在 Positron 等统一环境中管理解释器、变量、图形与 Notebook；
-- 使用 `rpy2` 在 Python 进程中调用 R，并控制数据转换边界；
-- 为最终项目建立可维护的脚本、图形和报告工作流。
+- understand the complementary roles of Python and R in an analytical workflow;
+- use a DataFrame as the core data structure for collaboration across tools;
+- manage interpreters, variables, figures, and Notebooks in a unified environment such as Positron;
+- call R from a Python process with `rpy2` while controlling the conversion boundary;
+- build maintainable scripts, figures, and reports for the final project.
 
-## 工具分工
+## Division of Tools
 
-| 任务 | Python 生态 | R 生态 | 选择建议 |
+| Task | Python ecosystem | R ecosystem | Selection guidance |
 | --- | --- | --- | --- |
-| 数据整理 | pandas、Polars | dplyr、tidyr | 依据数据规模与团队熟悉度 |
-| 统计建模 | scipy、statsmodels | stats、lme4、survival | 复杂统计模型常优先查看 R 生态 |
-| 机器学习 | scikit-learn、PyTorch | tidymodels、torch | 训练与部署通常更偏 Python |
-| 可视化 | Matplotlib、Seaborn、Plotly | ggplot2、plotly | 语法体系不同，但均应遵循同一视觉原则 |
-| 交互应用 | Streamlit、Dash、FastAPI | Shiny | 根据部署环境和团队维护能力选择 |
+| Data preparation | pandas, Polars | dplyr, tidyr | Choose according to data scale and team experience |
+| Statistical modeling | scipy, statsmodels | stats, lme4, survival | For specialized models, check the R ecosystem first |
+| Machine learning | scikit-learn, PyTorch | tidymodels, torch | Training and deployment often lean toward Python |
+| Visualization | Matplotlib, Seaborn, Plotly | ggplot2, plotly | The syntax differs, but the visual principles should be shared |
+| Interactive applications | Streamlit, Dash, FastAPI | Shiny | Consider deployment and long-term maintenance |
 
-不要为了“同时使用两种语言”而增加复杂度。只有当另一生态提供明确的方法、包或表达优势时，跨语言调用才有价值。
+Do not add complexity just to use two languages. Use a cross-language call only when the other ecosystem offers a clear methodological, package, or communication advantage.
 
-## Positron：统一的数据科学界面
+## Positron: A Unified Data-science Interface
 
-[Positron](https://positron.posit.co/) 面向 Python 与 R 数据科学工作流，提供解释器选择、Notebook、变量查看、图形面板与终端等能力。课程总结中将其作为跨语言分析环境进行介绍。
+[Positron](https://positron.posit.co/) supports Python and R workflows with interpreter selection, Notebooks, variable inspection, a figure panel, and a terminal. The course uses it as one example of a cross-language environment.
 
-建议的项目会话顺序：
+Recommended project-session order:
 
-1. 打开项目根目录，而不是单独打开某个脚本；
-2. 选择项目对应的 Python 解释器与 R；
-3. 先运行环境检查，再加载数据；
-4. 将探索性代码逐步整理到 `src/` 中；
-5. 仅把能够重新生成的最终图表写入 `figures/`。
+1. Open the project root rather than an individual script;
+2. select the project's Python interpreter and R runtime;
+3. run an environment check before loading data;
+4. gradually move exploratory code into `src/`;
+5. write final figures to `figures/` only when they can be regenerated.
 
-## DataFrame 是协作边界
+## The DataFrame as a Collaboration Boundary
 
-跨语言工作流最容易出错的地方不是语法，而是数据类型转换：
+The most common cross-language failures are about data types, not syntax:
 
-| Python / pandas | R | 注意事项 |
+| Python / pandas | R | Note |
 | --- | --- | --- |
-| `float64` | `numeric` | 缺失值与无穷值需单独检查 |
-| `int64` | `integer` / `numeric` | 超大整数可能发生精度或类型变化 |
-| `object` / `string` | `character` | 避免混合数字与字符串 |
-| `category` | `factor` | 因子水平与顺序会影响建模和作图 |
-| `datetime64` | `POSIXct` | 时区必须显式处理 |
-| `bool` | `logical` | 检查缺失逻辑值 |
+| `float64` | `numeric` | Check missing and infinite values separately |
+| `int64` | `integer` / `numeric` | Very large integers may change precision or type |
+| `object` / `string` | `character` | Avoid mixing numbers and strings |
+| `category` | `factor` | Factor levels and order affect modeling and figures |
+| `datetime64` | `POSIXct` | Handle time zones explicitly |
+| `bool` | `logical` | Check missing logical values |
 
-!!! tip "跨语言前先冻结数据契约"
-    明确列名、类型、单位、类别水平和主键。比起在两个环境中反复修补类型，一个清晰的数据契约更可靠。
+!!! tip "Freeze a data contract before crossing languages"
+    Define column names, types, units, category levels, and primary keys. A clear data contract is more reliable than repeatedly patching types in two environments.
 
-## 使用 rpy2
+## Using rpy2
 
-安装方式见 [环境准备](Prerequisites_guild.md)。以下示例在 Python 中创建数据，将其转换为 R DataFrame，调用 R 的 `aggregate()`，再转换回 pandas。
+See [Prerequisites](Prerequisites_guild.md) for installation. The example below creates data in Python, converts it to an R DataFrame, calls R's `aggregate()`, and converts the result back to pandas.
 
 ```python
 import pandas as pd
@@ -74,10 +74,10 @@ converter = default_converter + pandas2ri.converter
 with localconverter(converter):
     r_df = ro.conversion.py2rpy(df)
 
-ro.globalenv["dvam_df"] = r_df
+ro.globalenv["dva_df"] = r_df
 r_summary = ro.r(
     """
-    aggregate(value ~ group, data = dvam_df, FUN = mean)
+    aggregate(value ~ group, data = dva_df, FUN = mean)
     """
 )
 
@@ -87,33 +87,33 @@ with localconverter(converter):
 print(summary)
 ```
 
-推荐使用局部转换上下文，而不是在整个进程中永久启用自动转换。这样可以让数据转换发生在明确位置，减少大型项目中的隐式行为。
+Prefer a local conversion context instead of enabling automatic conversion for an entire process. Conversion then occurs at an explicit boundary, with less implicit behavior in large projects.
 
-!!! warning "运行前提"
-    `rpy2` 依赖可用的 R 运行时。若 R 与 Python 来自不同环境，常见症状包括找不到共享库、包路径不一致或数据类型转换失败。
+!!! warning "Runtime requirement"
+    `rpy2` requires an available R runtime. When R and Python come from different environments, common symptoms include missing shared libraries, inconsistent package paths, and failed data conversion.
 
-## 进阶可视化的四个层次
+## Four Levels of Advanced Visualization
 
-### 1. 展示原始结构
+### 1. Show the raw structure
 
-优先让读者看到数据量、分布和异常点。必要时使用透明度、抖动、分面或二维密度减少遮挡。
+Let readers see data volume, distributions, and unusual points. Use transparency, jitter, faceting, or two-dimensional density when overplotting is a problem.
 
-### 2. 展示统计摘要
+### 2. Show statistical summaries
 
-均值、中位数、回归线和置信区间必须与研究问题相匹配。图中应明确不确定性代表什么，而不是使用无说明的误差条。
+Means, medians, regression lines, and confidence intervals must match the research question. State what uncertainty represents instead of using unexplained error bars.
 
-### 3. 组织多面板叙事
+### 3. Organize a multi-panel narrative
 
-一个研究型图组通常遵循：
+A research figure set often follows:
 
-- Panel A：数据或研究设计；
-- Panel B：主要发现；
-- Panel C：稳健性、分层或机制解释；
-- Panel D：限制、外部验证或应用。
+- Panel A: data or study design;
+- Panel B: primary finding;
+- Panel C: robustness, stratification, or mechanism;
+- Panel D: limitation, external validation, or application.
 
-面板之间应共享配色、变量命名、尺度逻辑与阅读方向。
+Panels should share colors, variable names, scale logic, and reading direction.
 
-### 4. 输出可复用结果
+### 4. Export reusable results
 
 ```python
 from pathlib import Path
@@ -128,44 +128,44 @@ fig.savefig(output / "main_result.png", dpi=300, bbox_inches="tight")
 fig.savefig(output / "main_result.pdf", bbox_inches="tight")
 ```
 
-位图适合网页与演示，PDF / SVG 等矢量格式适合论文排版；具体格式还应考虑期刊、字体许可与下游编辑需求。
+Bitmap files are useful for webpages and presentations. PDF and SVG are better for paper layout. Consider the journal, font licenses, and downstream editing requirements when choosing a format.
 
-## 工作流建议
+## Workflow Recommendations
 
 <div class="dvam-grid" markdown>
 
 <div class="dvam-card" markdown>
 ### Explore
 
-在 Notebook 中快速审计数据、验证变量关系和形成假设，但保留必要注释与随机种子。
+Audit data, test variable relationships, and form hypotheses quickly in a Notebook, while keeping essential comments and random seeds.
 </div>
 
 <div class="dvam-card" markdown>
 ### Refactor
 
-把重复逻辑整理为函数，把路径与参数集中管理，把数据处理从展示代码中分离。
+Turn repeated logic into functions, centralize paths and parameters, and separate data processing from display code.
 </div>
 
 <div class="dvam-card" markdown>
 ### Validate
 
-检查数据泄漏、过拟合、批次效应、敏感性分析和跨平台可运行性。
+Check leakage, overfitting, batch effects, sensitivity analyses, and cross-platform execution.
 </div>
 
 <div class="dvam-card" markdown>
 ### Communicate
 
-用 README 解释入口，用技术报告说明方法，用图表传达主要证据，用仓库保存可追踪过程。
+Use the README to explain the entry point, the technical report to explain methods, figures to communicate evidence, and the repository to preserve a traceable process.
 </div>
 
 </div>
 
-## 课后练习
+## After-class Exercise
 
-1. 用 pandas 创建一个至少包含数值列、类别列和缺失值的 DataFrame；
-2. 将数据传入 R，按类别计算一个描述统计量；
-3. 把结果转换回 Python 并绘图；
-4. 记录转换前后的列类型；
-5. 在 README 中说明为什么这一步值得使用跨语言方案。
+1. Create a pandas DataFrame with at least a numeric column, a categorical column, and missing values;
+2. pass the data to R and calculate one descriptive statistic by category;
+3. convert the result back to Python and plot it;
+4. record column types before and after conversion;
+5. explain in the README why a cross-language approach is worthwhile for this step.
 
-完成后可继续阅读 [课程项目要求](final-project.md)，将方法组织成完整交付。
+Afterwards, continue to the [Final Project requirements](final-project.md) and organize the method into a complete submission.

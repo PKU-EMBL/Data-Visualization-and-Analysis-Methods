@@ -1,40 +1,40 @@
-# Lecture 01 · 从数据到证据
+# Lecture 01 · From Data to Evidence
 
 <div class="dvam-lead" markdown>
-本讲建立课程的核心分析框架：先澄清研究问题与数据结构，再选择统计摘要和视觉编码，最后形成能够被复核的结论。
+This lecture introduces the course's analytical framework. We clarify the question and data structure, choose summaries and visual encodings, and produce conclusions that another reader can check.
 </div>
 
-## 学习目标
+## Learning Objectives
 
 <div class="dvam-grid" markdown>
 
 <div class="dvam-card" markdown>
-### 问题建模
+### Problem framing
 
-把宽泛主题转化为可检验的问题，明确分析单位、比较对象、响应变量与潜在混杂因素。
+Turn a broad topic into a testable question. Define the unit of analysis, comparison, response variable, and potential confounders.
 </div>
 
 <div class="dvam-card" markdown>
-### 数据审计
+### Data auditing
 
-检查数据类型、缺失值、重复记录、异常值、单位与采样偏差，建立对数据质量的基本判断。
+Inspect data types, missing values, duplicate records, outliers, units, and sampling bias before drawing conclusions.
 </div>
 
 <div class="dvam-card" markdown>
-### 图形选择
+### Figure selection
 
-根据任务选择位置、长度、颜色、面积等视觉通道，并理解不同图表的适用边界。
+Choose position, length, color, area, and other visual channels for the task, while understanding when each chart can mislead.
 </div>
 
 <div class="dvam-card" markdown>
-### 证据表达
+### Evidence communication
 
-让图题、坐标、图例、注释与不确定性共同支撑结论，而不是依赖装饰性效果。
+Let titles, axes, legends, annotations, and uncertainty support the conclusion instead of relying on decorative effects.
 </div>
 
 </div>
 
-## 分析闭环
+## The Analytical Loop
 
 ```mermaid
 flowchart LR
@@ -46,38 +46,38 @@ flowchart LR
     F -. "new question" .-> A
 ```
 
-一套成熟的分析流程通常不是线性的。可视化会暴露数据问题，验证会迫使我们重新定义指标，而表达过程也会检验结论是否真正清晰。
+A mature analytical workflow is rarely linear. Visualization can expose data problems. Validation can force us to redefine a metric. Communication can reveal that a conclusion is not yet clear.
 
-## 从研究主题到分析问题
+## From a Topic to an Analytical Question
 
-“空气质量”“生物多样性”或“材料性能”只是主题，还不是可执行的问题。一个可分析的问题至少应回答四件事：
+“Air quality,” “biodiversity,” and “material performance” are topics, not executable questions. An analytical question should answer four basic questions:
 
-| 要素 | 需要回答的问题 | 示例 |
+| Element | Question to answer | Example |
 | --- | --- | --- |
-| Analysis unit | 每一行代表什么？ | 城市—日期、样本—基因、材料—实验条件 |
-| Outcome | 希望解释或预测什么？ | PM2.5、物种丰富度、CO₂ 吸附量 |
-| Comparison | 哪些组别、时间或条件需要比较？ | 季节、处理组、材料类别 |
-| Context | 哪些变量可能影响解释？ | 温度、批次、测量平台、空间位置 |
+| Analysis unit | What does each row represent? | City–date, sample–gene, material–experimental condition |
+| Outcome | What do we want to explain or predict? | PM2.5, species richness, CO₂ adsorption |
+| Comparison | Which groups, times, or conditions should be compared? | Season, treatment group, material category |
+| Context | Which variables may affect the interpretation? | Temperature, batch, measurement platform, spatial location |
 
-!!! example "把宽泛主题改写为问题"
-    主题：“研究城市空气质量。”
+!!! example "Rewrite a broad topic as a question"
+    Topic: “Study urban air quality.”
 
-    问题：“在控制季节与气象条件后，北京不同功能区的 PM2.5 水平是否存在稳定差异？这种差异在 2020–2025 年间如何变化？”
+    Question: “After controlling for season and meteorological conditions, do Beijing's functional zones show stable differences in PM2.5, and how do those differences change from 2020 to 2025?”
 
-后一个表述明确了响应变量、比较维度、时间范围和潜在混杂因素，因此能够直接指导数据整理与图表设计。
+The second formulation specifies the response variable, comparison, time range, and potential confounders. It can guide data preparation and figure design directly.
 
-## 数据结构与质量
+## Data Structure and Quality
 
 ### Tidy data
 
-推荐把分析表整理为：
+Organize an analytical table so that:
 
-- 每个变量占一列；
-- 每个观测占一行；
-- 每类观测单位形成一张表；
-- 列名稳定、单位明确、类别编码一致。
+- each variable is a column;
+- each observation is a row;
+- each observational unit has its own table when appropriate;
+- column names are stable, units are explicit, and category codes are consistent.
 
-### 最小数据审计
+### A minimal data audit
 
 ```python
 import pandas as pd
@@ -97,22 +97,22 @@ print(audit["missing_rate"].head())
 print(audit["dtypes"])
 ```
 
-这段检查不会自动判断数据是否“正确”，但能够快速暴露结构性问题。对异常值的处理必须结合采样与测量背景，不能仅凭箱线图或固定阈值直接删除。
+This check does not decide whether the data are “correct.” It quickly exposes structural problems. Interpret outliers in the context of sampling and measurement. Do not delete observations solely from a box plot or a fixed threshold.
 
-## 视觉任务与图表选择
+## Visual Tasks and Chart Selection
 
-| 分析任务 | 优先考虑 | 谨慎使用 |
+| Analytical task | Prefer | Use with care |
 | --- | --- | --- |
-| 比较大小 | 点图、条形图、区间图 | 3D 柱状图、面积不等的图标 |
-| 查看分布 | 直方图、密度图、箱线图 + 原始点 | 只报告均值、不展示样本量 |
-| 分析关系 | 散点图、回归线、二维密度 | 双 Y 轴、未经解释的平滑曲线 |
-| 观察时间 | 折线图、事件标记、置信区间 | 类别顺序混乱的折线 |
-| 展示组成 | 堆叠条形图、小倍图 | 类别过多的饼图 |
-| 表达空间 | 分级设色图、点位图 | 未标准化人口或面积的原始计数地图 |
+| Compare magnitude | Dot plots, bar charts, interval plots | 3D bars, icons with unequal areas |
+| Inspect a distribution | Histograms, density plots, box plots plus raw points | Reporting only a mean without sample size |
+| Analyze a relationship | Scatter plots, regression lines, two-dimensional density | Dual Y-axes, unexplained smoothing curves |
+| Observe time | Line charts, event markers, confidence intervals | Lines with an arbitrary category order |
+| Show composition | Stacked bars, small multiples | Pie charts with too many categories |
+| Express space | Choropleths, point maps | Raw counts without population or area normalization |
 
-视觉编码的基本优先级通常是：**共同尺度上的位置 > 长度 > 角度 / 斜率 > 面积 > 颜色强度**。这不是绝对规则，但可以帮助你避免把精确比较交给不擅长精确判断的视觉通道。
+A useful default ordering for visual precision is: **position on a common scale > length > angle / slope > area > color intensity**. It is not an absolute rule, but it helps avoid assigning precise comparisons to channels that are difficult to judge accurately.
 
-## 一个透明的比较图
+## A Transparent Comparison Figure
 
 ```python
 import matplotlib.pyplot as plt
@@ -158,30 +158,30 @@ fig.tight_layout()
 fig.savefig("figures/condition_comparison.png", dpi=300)
 ```
 
-与只画均值条形图相比，“分布摘要 + 原始点”同时保留了中心趋势、离散程度和样本量信息。正式报告中还应说明数据来源、重复类型以及所采用的统计检验。
+Compared with a bar chart of means alone, a distribution summary plus raw points preserves central tendency, spread, and sample-size information. A formal report should also state the data source, replication type, and statistical test.
 
-## 图形完整性
+## Figure Integrity
 
-提交图表前逐项检查：
+Before submitting a figure, check:
 
-1. **尺度**：坐标变换是否必要并已说明？条形图是否从零开始？
-2. **样本**：是否展示样本量、重复类型和缺失处理？
-3. **不确定性**：误差条表示 SD、SE 还是 CI？
-4. **颜色**：颜色是否具有语义？黑白打印和色觉差异下是否仍可区分？
-5. **文字**：标题是否给出发现，而不是只重复变量名？
-6. **来源**：数据、方法与图形生成代码是否可追踪？
+1. **Scale:** Is a coordinate transformation necessary and documented? Does a bar chart start at zero?
+2. **Sample:** Are sample size, replication type, and missing-data handling visible?
+3. **Uncertainty:** Do error bars represent SD, SE, or a confidence interval?
+4. **Color:** Does color have a consistent meaning? Is the figure readable in grayscale and under color-vision differences?
+5. **Text:** Does the title state a finding rather than repeat a variable name?
+6. **Provenance:** Can the data, methods, and figure-generation code be traced?
 
-!!! warning "相关不等于因果"
-    散点图、相关系数或预测模型可以描述关联，但不能单独证明因果关系。结论强度必须与研究设计、数据质量和模型假设相匹配。
+!!! warning "Correlation is not causation"
+    A scatter plot, correlation coefficient, or predictive model can describe an association, but cannot establish causality on its own. The strength of a conclusion must match the study design, data quality, and model assumptions.
 
-## 课后练习
+## After-class Exercise
 
-选择一个公开表格数据集，完成以下交付：
+Choose a public tabular dataset and deliver:
 
-- 一段不超过 80 字的研究问题；
-- 一张数据字典，至少包含变量名、类型、单位与缺失说明；
-- 一张展示分布的图和一张展示关系的图；
-- 每张图配一条“结论 + 限制”说明；
-- 提交可重新运行的 Notebook 或脚本。
+- a research question in no more than 80 words;
+- a data dictionary with variable name, type, unit, and missing-value notes;
+- one distribution figure and one relationship figure;
+- a “conclusion + limitation” statement for each figure;
+- a rerunnable Notebook or script.
 
-下一讲将进一步讨论 [Python / R 跨语言工作流与进阶可视化](lecture2.md)。
+The next lecture discusses the [Python / R cross-language workflow and advanced visualization](lecture2.md).

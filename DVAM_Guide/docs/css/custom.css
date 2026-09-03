@@ -458,6 +458,10 @@ body {
   line-height: 1.2;
 }
 
+.md-typeset h1.course-site-title {
+  display: none !important;
+}
+
 .md-typeset .course-hero__main > p,
 .md-typeset .dvam-hero__content > p {
   max-width: 43rem;
@@ -659,21 +663,6 @@ body {
 
 .md-typeset .dvam-callout p {
   margin: 0;
-}
-
-.md-typeset .dvam-release {
-  margin: 0.5rem 0 1.5rem;
-  padding: 1.2rem 1.25rem;
-  border: 1px solid var(--course-border-strong);
-  border-radius: 0.65rem;
-  background: var(--course-surface);
-  box-shadow: var(--course-shadow);
-}
-
-.md-typeset .dvam-release h2 {
-  margin: 0.35rem 0 0.45rem;
-  padding: 0;
-  border: 0;
 }
 
 /* Tables, notices, tabs, and code */
@@ -946,5 +935,332 @@ div.doc-contents:not(.first) {
   .md-typeset table:not([class]) {
     box-shadow: none;
     break-inside: avoid;
+  }
+}
+
+/* Stanford CS329A-inspired course shell: original styles and course content. */
+:root {
+  --stanford-cardinal: #8c1515;
+  --stanford-ink: #333333;
+  --stanford-muted: #666666;
+  --stanford-rule: #dddddd;
+}
+
+html {
+  scroll-padding-top: 7rem;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: Roboto, Arial, Helvetica, sans-serif !important;
+}
+
+body {
+  padding-top: 70px !important;
+  background: #ffffff !important;
+  color: var(--stanford-ink) !important;
+  font-weight: 300 !important;
+  text-rendering: optimizeLegibility;
+}
+
+.md-header.stanford-header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 100;
+  min-height: 70px;
+  background: var(--stanford-cardinal) !important;
+  color: #ffffff !important;
+  border: 0;
+  box-shadow: none;
+}
+
+.stanford-header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1170px;
+  min-height: 70px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.stanford-brand {
+  flex: 1 0 100%;
+  padding: 12px 0 4px;
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none !important;
+}
+
+.stanford-nav {
+  display: flex;
+  flex: 1 0 100%;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.stanford-nav a {
+  display: block;
+  padding: 15px 16px;
+  color: #ffffff !important;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-decoration: none !important;
+  transition: background-color 120ms ease;
+}
+
+.stanford-nav a:hover,
+.stanford-nav a:focus {
+  background: rgba(0, 0, 0, 0.15);
+  outline: 0;
+}
+
+.md-main {
+  background: #ffffff !important;
+}
+
+.md-main__inner {
+  display: block !important;
+  max-width: 1170px;
+  margin: 0 auto !important;
+}
+
+.md-sidebar,
+.md-source,
+.md-header__button,
+.md-header__title,
+.md-header__option,
+.md-search,
+.md-tabs,
+.md-footer,
+.md-banner,
+.dvam-page-meta {
+  display: none !important;
+}
+
+.md-content {
+  width: 100% !important;
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.md-content__inner {
+  max-width: 1170px !important;
+  margin: 0 auto !important;
+  padding: 95px 15px 64px !important;
+}
+
+.md-typeset {
+  max-width: none;
+  color: var(--stanford-ink) !important;
+  font-family: Roboto, Arial, Helvetica, sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  line-height: 1.42857143 !important;
+}
+
+.md-typeset h1 {
+  margin: 10px 0;
+  color: var(--stanford-cardinal) !important;
+  font-family: Roboto, Arial, Helvetica, sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.md-typeset h2 {
+  margin: 60px 0 10px;
+  padding: 0;
+  color: var(--stanford-cardinal) !important;
+  font-family: Roboto, Arial, Helvetica, sans-serif !important;
+  font-size: 25px !important;
+  font-weight: 700;
+  line-height: 27.5px;
+  border: 0;
+}
+
+.md-typeset h3 {
+  margin: 20px 0 10px;
+  color: var(--stanford-ink) !important;
+  font-family: Roboto, Arial, Helvetica, sans-serif !important;
+  font-size: 20px !important;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+.md-typeset p,
+.md-typeset li,
+.md-typeset td,
+.md-typeset th {
+  color: var(--stanford-ink);
+  font-family: Roboto, Arial, Helvetica, sans-serif !important;
+}
+
+.md-typeset blockquote,
+.md-typeset .admonition,
+.md-typeset .admonition-title {
+  font-family: Roboto, Arial, Helvetica, sans-serif !important;
+}
+
+.md-typeset a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.md-typeset table:not([class]) {
+  display: table;
+  width: 100%;
+  margin: 18px 0 28px;
+  border: 1px solid var(--stanford-rule);
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+.md-typeset table:not([class]) th {
+  background: #f5f5f5;
+  border: 1px solid var(--stanford-rule);
+  color: var(--stanford-ink);
+  font-weight: 600;
+}
+
+.md-typeset table:not([class]) td {
+  border: 1px solid var(--stanford-rule);
+}
+
+.md-typeset blockquote,
+.md-typeset .admonition {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Staff cards match the template's simple, centered people directory. */
+.course-people {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px 30px;
+}
+
+.course-person {
+  flex: 0 0 25%;
+  min-width: 180px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.course-person__photo {
+  display: block;
+  width: 120px !important;
+  height: 120px !important;
+  margin: 0 auto 10px !important;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.course-person h3 {
+  margin: 0 0 4px;
+  color: var(--stanford-ink) !important;
+  font-size: 18px !important;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.course-person h3 a {
+  color: var(--stanford-ink) !important;
+  text-decoration: none !important;
+}
+
+.course-person p {
+  margin: 0;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23px;
+}
+
+.course-person .course-person__contact,
+.course-person p:last-child {
+  font-size: 14px;
+}
+
+.course-person p a {
+  color: #337ab7 !important;
+}
+
+/* Keep the longer schedule readable while matching the template's table rhythm. */
+#schedule {
+  overflow-x: auto;
+}
+
+#schedule table:not([class]) {
+  min-width: 920px;
+  margin-top: 10px;
+}
+
+#schedule table:not([class]) th,
+#schedule table:not([class]) td {
+  padding: 8px;
+  vertical-align: top;
+}
+
+#schedule table:not([class]) th:first-child,
+#schedule table:not([class]) td:first-child {
+  width: 4%;
+  white-space: nowrap;
+}
+
+#schedule table:not([class]) th:nth-child(2),
+#schedule table:not([class]) td:nth-child(2) {
+  width: 15%;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .course-person {
+    flex-basis: 50%;
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    padding-top: 116px !important;
+  }
+
+  .md-header.stanford-header,
+  .stanford-header__inner {
+    min-height: 116px;
+  }
+
+  .stanford-header__inner {
+    padding: 0 15px;
+  }
+
+  .stanford-brand {
+    padding-top: 10px;
+    font-size: 16px;
+  }
+
+  .stanford-nav a {
+    padding: 8px 11px 10px;
+    font-size: 14px;
+  }
+
+  .md-content__inner {
+    padding: 24px 15px 48px !important;
+  }
+
+  .md-typeset h1 {
+    font-size: 28px !important;
+  }
+
+  .md-typeset h2 {
+    font-size: 23px !important;
   }
 }

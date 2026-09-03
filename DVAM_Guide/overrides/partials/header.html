@@ -1,0 +1,16 @@
+{% set home = config.extra.homepage | d(nav.homepage.url, true) | url %}
+
+<header class="md-header stanford-header" data-md-component="header">
+  <div class="stanford-header__inner">
+    <a class="stanford-brand" href="{{ home }}">
+      Methodologies of Data Visualization and Analysis
+    </a>
+    <nav class="stanford-nav" aria-label="Course navigation">
+      <a href="{{ home }}#intro">Overview</a>
+      <a href="{{ home }}#people">Staff</a>
+        <a href="{{ home }}#schedule">Schedule</a>
+        <a href="{{ home }}#grading">Grading</a>
+        <a href="{{ home }}#policies">Policies</a>
+    </nav>
+  </div>
+</header>
