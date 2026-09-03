@@ -959,7 +959,7 @@ textarea {
 }
 
 body {
-  padding-top: 70px !important;
+  padding-top: 86px !important;
   background: #ffffff !important;
   color: var(--stanford-ink) !important;
   font-weight: 300 !important;
@@ -970,7 +970,7 @@ body {
   position: fixed;
   inset: 0 0 auto;
   z-index: 100;
-  min-height: 70px;
+  min-height: 86px;
   background: var(--stanford-cardinal) !important;
   color: #ffffff !important;
   border: 0;
@@ -982,7 +982,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   max-width: 1170px;
-  min-height: 70px;
+  min-height: 86px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -1053,7 +1053,11 @@ body {
 .md-content__inner {
   max-width: 1170px !important;
   margin: 0 auto !important;
-  padding: 95px 15px 64px !important;
+  padding: 0 15px 64px !important;
+}
+
+.md-content__inner > h2:first-of-type {
+  margin-top: 0 !important;
 }
 
 .md-typeset {
@@ -1253,7 +1257,7 @@ body {
   }
 
   .md-content__inner {
-    padding: 24px 15px 48px !important;
+    padding: 0 15px 48px !important;
   }
 
   .md-typeset h1 {
