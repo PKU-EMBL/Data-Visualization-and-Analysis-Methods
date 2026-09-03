@@ -1,4 +1,4 @@
-# 数据可视化与分析方法 | Data Visualization and Analysis Methods
+# 数据可视化与分析方法 | Methodologies of Data Visualization and Analysis
 
 > 从数据到证据，从图形到洞见：一门强调可复现分析与研究型视觉表达的方法课程。
 
