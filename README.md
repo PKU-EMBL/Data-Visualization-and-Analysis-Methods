@@ -3,7 +3,7 @@
 > From data to evidence and from figures to insight: a methods course in reproducible analysis and research-oriented visual communication.
 
 <p align="center">
-  <img src="DVAM_Guide/docs/img/yu-lab-logo.png" alt="PKU EMBL Yu's Lab" width="240">
+  <img src="Website/docs/img/yu-lab-logo.png" alt="PKU EMBL Yu's Lab" width="240">
 </p>
 
 <p align="center">
@@ -27,9 +27,9 @@ This repository contains the current English documentation for **Methodologies o
 
 **Fall 2026–2027**
 
-This graduate course introduces practical methods for data visualization and analysis. Students learn to turn research questions into clear workflows, choose appropriate visual and statistical methods, and communicate reproducible results with Python and R.
+This course covers modern methods and applications of data visualization and analysis, with a focus on reproducible research and **Vibe Coding**. The course will start with research-question design, data auditing, visual encoding, and statistical interpretation. We will then discuss how Python, R, and AI coding assistants can be combined to explore data, generate code, and build visual workflows through natural-language interaction. We will next examine cross-language analysis, multi-step analytical workflows, and the challenges of evaluating code, figures, uncertainty, and reproducibility.
 
-A central theme is **Vibe Coding**: using AI coding assistants to prototype and debug workflows while checking outputs with human judgment, version control, and transparent disclosure. Students apply these methods in an original team project.
+Our goal is that students learn from current research papers, discuss suggested readings in class, and apply these ideas in an original team project. Students will also learn how to use AI-assisted tools responsibly while keeping analytical decisions transparent, testable, and reproducible.
 
 ## Course Staff
 
@@ -46,18 +46,16 @@ The homepage organizes the schedule as **Date · Description · Reading Material
 
 ## Documentation
 
-- [Course homepage](DVAM_Guide/docs/index.md)
-- [Prerequisites](DVAM_Guide/docs/Prerequisites_guild.md)
-- [Lecture 01 · From Data to Evidence](DVAM_Guide/docs/lecture1.md)
-- [Lecture 02 · Cross-language Workflow](DVAM_Guide/docs/lecture2.md)
-- [Final Project requirements](DVAM_Guide/docs/final-project.md)
-- [Resource Index](DVAM_Guide/docs/api/index.md)
+- [Course homepage](Website/docs/index.md)
+- [Prerequisites](Website/docs/Prerequisites_guild.md)
+- [Final Project requirements](Website/docs/final-project.md)
+- [Resource Index](Website/docs/api/index.md)
 
 The documentation is built with MkDocs Material and configured for Read the Docs.
 
 ## Final Project
 
-The course project turns a topic in the team's disciplinary background into a clear research question, reproducible analysis, and documented visual communication. See the [Final Project requirements](DVAM_Guide/docs/final-project.md) for the current workflow and submission checklist.
+Final Project details: **To be announced.** See the [Final Project page](Website/docs/final-project.md) for updates.
 
 ## Contributing
 

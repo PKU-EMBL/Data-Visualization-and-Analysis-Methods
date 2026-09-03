@@ -9,9 +9,9 @@ hide:
 
 **Fall 2026–2027**
 
-This graduate course introduces practical methods for data visualization and analysis. Students learn to turn research questions into clear workflows, choose appropriate visual and statistical methods, and communicate reproducible results with Python and R.
+This course covers modern methods and applications of data visualization and analysis, with a focus on reproducible research and **Vibe Coding**. The course will start with research-question design, data auditing, visual encoding, and statistical interpretation. We will then discuss how Python, R, and AI coding assistants can be combined to explore data, generate code, and build visual workflows through natural-language interaction. We will next examine cross-language analysis, multi-step analytical workflows, and the challenges of evaluating code, figures, uncertainty, and reproducibility.
 
-A central theme is **Vibe Coding**: using AI coding assistants to prototype and debug workflows while checking outputs with human judgment, version control, and transparent disclosure. Students apply these methods in an original team project.
+Our goal is that students learn from current research papers, discuss suggested readings in class, and apply these ideas in an original team project. Students will also learn how to use AI-assisted tools responsibly while keeping analytical decisions transparent, testable, and reproducible.
 
 ## Course Staff { #people }
 
@@ -79,11 +79,11 @@ Assessment focuses on the project process and final delivery. Official weighting
 - **Communication:** a clear, honest README, technical report, and set of figures;
 - **Collaboration:** transparent contributions, version control, and team decisions.
 
-See the [Final Project requirements](final-project.md) for the delivery checklist, workflow, contribution form, and academic-integrity requirements.
+Final Project: **To be announced.**
 
 ## Research Projects
 
-Teams of 2–4 students start from a real question and complete an original analysis. Each project delivers data documentation, analysis scripts, visualizations, a technical report, and a contribution record. See the [Final Project requirements](final-project.md) for the workflow and delivery checklist.
+Teams of 2–4 students will work from a real question and complete an original analysis. Project details: **To be announced.**
 
 ## Course Policies { #policies }
 

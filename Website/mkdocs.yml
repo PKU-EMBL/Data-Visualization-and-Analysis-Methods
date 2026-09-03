@@ -9,8 +9,6 @@ nav:
   - Home: index.md
   - Course Guide:
       - Prerequisites: Prerequisites_guild.md
-      - Lecture 01 · From Data to Evidence: lecture1.md
-      - Lecture 02 · Cross-language Workflow: lecture2.md
   - Course Projects:
       - Final Project: final-project.md
   - Resources: api/index.md
