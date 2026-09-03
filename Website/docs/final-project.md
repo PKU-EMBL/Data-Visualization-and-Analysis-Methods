@@ -1,3 +1,3 @@
 # Final Project
 
-**To be announced.**
+Project details are **to be announced**.

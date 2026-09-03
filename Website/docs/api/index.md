@@ -1,52 +1,54 @@
 # Resource Index
 
 <div class="dvam-lead" markdown>
-This page groups official documentation and common resources by analytical task. External tools change over time. Use the official pages for current installation parameters and APIs.
+This page groups official documentation by analytical task. Tools change over time. Use the official pages for current installation instructions and APIs.
 </div>
 
 ## Environment and Development
 
 | Tool | Use | Official entry point |
 | --- | --- | --- |
-| Conda | Cross-platform environments and dependency management | [Managing environments](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html) |
-| Python Packaging | venv, pip, and package-management basics | [Packaging User Guide](https://packaging.python.org/en/latest/) |
-| JupyterLab | Notebooks and interactive computing | [JupyterLab Documentation](https://jupyterlab.readthedocs.io/) |
-| Positron | Python / R data-science IDE | [Positron Documentation](https://positron.posit.co/) |
+| Conda | Manage environments and dependencies | [Managing environments](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html) |
+| Python Packaging | Create environments and install packages | [Packaging User Guide](https://packaging.python.org/en/latest/) |
+| JupyterLab | Run notebooks and interactive analyses | [JupyterLab Documentation](https://jupyterlab.readthedocs.io/) |
+| Positron | Develop in Python and R | [Positron Documentation](https://positron.posit.co/) |
 | Git | Version control | [Git Documentation](https://git-scm.com/doc) |
-| GitHub | Collaboration, Issues, and Pull Requests | [GitHub Docs](https://docs.github.com/) |
-| The Missing Semester | Command-line tools, development environments, version control, and packaging | [Course site](https://missing.csail.mit.edu/) |
+| GitHub | Collaborate with issues and pull requests | [GitHub Docs](https://docs.github.com/) |
+| The Missing Semester | Command-line tools, environments, version control, and packaging | [Course site](https://missing.csail.mit.edu/) |
+| Rust | Build safe systems and command-line tools | [The Rust Programming Language](https://doc.rust-lang.org/book/) |
+| Cargo | Manage Rust packages and builds | [The Cargo Book](https://doc.rust-lang.org/cargo/) |
 
 ## Python Data Stack
 
 | Tool | Typical task | Official entry point |
 | --- | --- | --- |
-| NumPy | Arrays and numerical computing | [NumPy Documentation](https://numpy.org/doc/) |
-| pandas | Tabular data preparation and analysis | [pandas Documentation](https://pandas.pydata.org/docs/) |
-| SciPy | Scientific computing and statistical functions | [SciPy Documentation](https://docs.scipy.org/doc/scipy/) |
-| Matplotlib | Low-level plotting and precise layout | [Matplotlib Documentation](https://matplotlib.org/stable/) |
-| Seaborn | Statistical visualization | [Seaborn Documentation](https://seaborn.pydata.org/) |
-| scikit-learn | Classical machine learning and evaluation | [User Guide](https://scikit-learn.org/stable/user_guide.html) |
+| NumPy | Work with arrays and numerical data | [NumPy Documentation](https://numpy.org/doc/) |
+| pandas | Prepare and analyze tabular data | [pandas Documentation](https://pandas.pydata.org/docs/) |
+| SciPy | Run scientific and statistical calculations | [SciPy Documentation](https://docs.scipy.org/doc/scipy/) |
+| Matplotlib | Build precise plots and layouts | [Matplotlib Documentation](https://matplotlib.org/stable/) |
+| Seaborn | Build statistical visualizations | [Seaborn Documentation](https://seaborn.pydata.org/) |
+| scikit-learn | Train and evaluate classical models | [User Guide](https://scikit-learn.org/stable/user_guide.html) |
 
 ## R and Cross-language Work
 
 | Tool | Typical task | Official entry point |
 | --- | --- | --- |
-| R | Statistical-computing environment | [R Manuals](https://cran.r-project.org/manuals.html) |
-| ggplot2 | Grammar of Graphics visualization | [ggplot2 Documentation](https://ggplot2.tidyverse.org/) |
-| dplyr | Data transformation | [dplyr Documentation](https://dplyr.tidyverse.org/) |
-| tidyr | Tidy-data reshaping | [tidyr Documentation](https://tidyr.tidyverse.org/) |
-| rpy2 | Calling R from Python | [rpy2 Documentation](https://rpy2.github.io/doc/latest/html/) |
+| R | Run statistical analyses | [R Manuals](https://cran.r-project.org/manuals.html) |
+| ggplot2 | Build Grammar of Graphics plots | [ggplot2 Documentation](https://ggplot2.tidyverse.org/) |
+| dplyr | Transform data frames | [dplyr Documentation](https://dplyr.tidyverse.org/) |
+| tidyr | Reshape tidy data | [tidyr Documentation](https://tidyr.tidyverse.org/) |
+| rpy2 | Call R from Python | [rpy2 Documentation](https://rpy2.github.io/doc/latest/html/) |
 
 ## Data Discovery
 
-- [Database Commons](https://ngdc.cncb.ac.cn/databasecommons/): directory of life-science databases;
-- [MIBiG](https://mibig.secondarymetabolites.org/): resource for known biosynthetic gene clusters;
-- [BiG-FAM](https://bigfam.bioinformatics.nl/home): biosynthetic gene-cluster family database;
-- government open-data portals, international-organization data portals, and supplementary data from papers.
+- [Database Commons](https://ngdc.cncb.ac.cn/databasecommons/) provides a directory of life-science databases.
+- [MIBiG](https://mibig.secondarymetabolites.org/) stores known biosynthetic gene clusters.
+- [BiG-FAM](https://bigfam.bioinformatics.nl/home) groups biosynthetic gene-cluster families.
+- Government portals, international-organization portals, and paper supplements provide additional datasets.
 
 ### Dataset Selection Checklist
 
-Before choosing a dataset, confirm:
+Before choosing a dataset, confirm the following:
 
 - [ ] It can legally be acquired, analyzed, and redistributed
 - [ ] It has a stable identifier, version, or download date
@@ -66,4 +68,4 @@ Before choosing a dataset, confirm:
 | Accessibility | Have type size, contrast, and color-vision differences been considered? |
 | Reproducibility | Can the figure be regenerated from code in the repository? |
 
-To begin, complete the [Prerequisites](../Prerequisites_guild.md). Then read the [Final Project requirements](../final-project.md) to organize a team submission.
+Start with the [Environment Setup](../Prerequisites_guild.md). Then read the [Final Project requirements](../final-project.md) to organize your team submission.

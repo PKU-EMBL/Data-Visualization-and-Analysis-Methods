@@ -1,8 +1,10 @@
-# Prerequisites
+# Environment Setup
 
-Basic programming experience is welcome but not required. Before the first class, install Python, R, and either JupyterLab or Positron. You should also have access to a Unix-like shell: Linux or macOS, or WSL on Windows. Use one project environment and record its dependencies.
+Basic programming experience is welcome but not required. Before the first class, install Python, R, Rust, and either JupyterLab or Positron. You also need a Unix-like shell. Use Linux or macOS, or WSL on Windows. Keep one project environment and record its dependencies.
 
-The course follows a foundation-first workflow similar to [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/). Its shell, command-line, development-environment, version-control, and packaging lessons are useful preparation.
+The course follows a workflow similar to [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/). Its shell, command-line, development-environment, version-control, and packaging lessons provide useful preparation.
+
+Install Rust with [rustup](https://rustup.rs/). It provides the `rustc` compiler and `cargo` package manager used in the Rust session.
 
 ## Recommended setup
 
@@ -33,12 +35,13 @@ python -m pip install -U pip
 python -m pip install jupyterlab numpy pandas scipy matplotlib seaborn scikit-learn
 ```
 
-On Windows, use WSL when a Unix-like terminal is helpful. See the [official WSL guide](https://learn.microsoft.com/windows/wsl/install) and the [Conda environment guide](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html) for platform-specific steps.
+On Windows, use WSL when you need a Unix-like terminal. See the [official WSL guide](https://learn.microsoft.com/windows/wsl/install) and the [Conda environment guide](https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html) for platform-specific steps.
 
 ## Ready check
 
-- [ ] Python and R return a version number;
-- [ ] a Jupyter Notebook or script runs in the project environment;
+- [ ] Python and R return version numbers;
+- [ ] `rustc --version` and `cargo --version` return version numbers;
+- [ ] A Jupyter Notebook or script runs in the project environment;
 - [ ] `pandas`, `matplotlib`, and `seaborn` import successfully.
 
 After the check, return to the [course homepage](index.md).

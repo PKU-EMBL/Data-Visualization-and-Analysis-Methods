@@ -978,6 +978,7 @@ body {
 }
 
 .stanford-header__inner {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -989,7 +990,7 @@ body {
 
 .stanford-brand {
   flex: 1 0 100%;
-  padding: 12px 0 4px;
+  padding: 12px 100px 4px 0;
   color: #ffffff !important;
   font-size: 18px;
   font-weight: 700;
@@ -1019,6 +1020,39 @@ body {
 .stanford-nav a:focus {
   background: rgba(0, 0, 0, 0.15);
   outline: 0;
+}
+
+.stanford-language-switcher {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  gap: 0.42rem;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 13px;
+  line-height: 1;
+}
+
+.stanford-language-switcher a {
+  padding: 0.34rem 0.42rem;
+  border-radius: 0.2rem;
+  color: inherit !important;
+  font-weight: 400;
+  text-decoration: none !important;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+.stanford-language-switcher a:hover,
+.stanford-language-switcher a:focus,
+.stanford-language-switcher a.is-active {
+  background: rgba(0, 0, 0, 0.18);
+  color: #ffffff !important;
+  outline: 0;
+}
+
+.stanford-language-switcher__divider {
+  opacity: 0.55;
 }
 
 .md-main {
@@ -1247,8 +1281,14 @@ body {
   }
 
   .stanford-brand {
-    padding-top: 10px;
+    padding: 10px 82px 4px 0;
     font-size: 16px;
+  }
+
+  .stanford-language-switcher {
+    top: 12px;
+    right: 15px;
+    font-size: 12px;
   }
 
   .stanford-nav a {

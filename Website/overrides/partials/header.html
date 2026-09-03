@@ -1,16 +1,23 @@
 {% set home = config.extra.homepage | d(nav.homepage.url, true) | url %}
+{% set zh_home = 'zh/' | url %}
+{% set is_zh = page and page.url and page.url.startswith('zh') %}
 
 <header class="md-header stanford-header" data-md-component="header">
   <div class="stanford-header__inner">
-    <a class="stanford-brand" href="{{ home }}">
-      Methodologies of Data Visualization and Analysis
+    <a class="stanford-brand" href="{{ zh_home if is_zh else home }}">
+      {{ '数据可视化与分析方法' if is_zh else 'Methodologies of Data Visualization and Analysis' }}
     </a>
-    <nav class="stanford-nav" aria-label="Course navigation">
-      <a href="{{ home }}#intro">Overview</a>
-      <a href="{{ home }}#people">Staff</a>
-        <a href="{{ home }}#schedule">Schedule</a>
-        <a href="{{ home }}#grading">Grading</a>
-        <a href="{{ home }}#policies">Policies</a>
+    <nav class="stanford-nav" aria-label="{{ '课程导航' if is_zh else 'Course navigation' }}">
+      <a href="{{ zh_home if is_zh else home }}#intro">{{ '概览' if is_zh else 'Overview' }}</a>
+      <a href="{{ zh_home if is_zh else home }}#people">{{ '课程团队' if is_zh else 'Staff' }}</a>
+      <a href="{{ zh_home if is_zh else home }}#schedule">{{ '课程安排' if is_zh else 'Schedule' }}</a>
+      <a href="{{ zh_home if is_zh else home }}#grading">{{ '考核' if is_zh else 'Grading' }}</a>
+      <a href="{{ zh_home if is_zh else home }}#policies">{{ '课程政策' if is_zh else 'Policies' }}</a>
     </nav>
+    <div class="stanford-language-switcher" aria-label="Language">
+      <a class="{{ '' if is_zh else 'is-active' }}" href="{{ home }}" hreflang="en" lang="en">EN</a>
+      <span class="stanford-language-switcher__divider" aria-hidden="true">/</span>
+      <a class="{{ 'is-active' if is_zh else '' }}" href="{{ zh_home }}" hreflang="zh" lang="zh-CN">中文</a>
+    </div>
   </div>
 </header>

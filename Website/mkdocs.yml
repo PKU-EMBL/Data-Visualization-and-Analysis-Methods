@@ -1,14 +1,15 @@
 site_name: "Methodologies of Data Visualization and Analysis"
-site_description: "Methodologies of Data Visualization and Analysis · PKU EMBL course documentation"
+site_description: "Graduate course documentation for data visualization, analysis, and metagenomics"
 repo_url: https://github.com/PKU-EMBL/Methodologies-of-Data-Visualization-and-Analysis
 repo_name: PKU-EMBL/Methodologies-of-Data-Visualization-and-Analysis
-site_author: "Zhaorui(Elijah) JIANG"
+site_author: "Zhaorui (Elijah) Jiang"
 copyright: "Copyright &copy; PKU EMBL Lab 2026–2027"
 
 nav:
   - Home: index.md
+  - 中文: zh/index.md
   - Course Guide:
-      - Prerequisites: Prerequisites_guild.md
+      - Environment Setup: Prerequisites_guild.md
   - Course Projects:
       - Final Project: final-project.md
   - Resources: api/index.md
@@ -42,17 +43,16 @@ theme:
       accent: custom
       toggle:
         icon: material/toggle-switch-off-outline
-        name: 切换至深色模式
+        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: custom
       accent: custom
       toggle:
         icon: material/toggle-switch
-        name: 切换至浅色模式
+        name: Switch to light mode
 
   features:
-    - navigation.instant
     - navigation.tracking
     - navigation.sections
     - navigation.indexes
