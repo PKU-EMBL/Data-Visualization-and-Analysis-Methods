@@ -1,5 +1,8 @@
 {% set home = config.extra.homepage | d(nav.homepage.url, true) | url %}
 {% set zh_home = 'zh/' | url %}
+{% set setup = 'Prerequisites_guild/' | url %}
+{% set project = 'final-project/' | url %}
+{% set resources = 'api/' | url %}
 {% set is_zh = page and page.url and page.url.startswith('zh') %}
 
 <header class="md-header stanford-header" data-md-component="header">
@@ -13,8 +16,11 @@
       <a href="{{ zh_home if is_zh else home }}#schedule">{{ '课程安排' if is_zh else 'Schedule' }}</a>
       <a href="{{ zh_home if is_zh else home }}#grading">{{ '考核' if is_zh else 'Grading' }}</a>
       <a href="{{ zh_home if is_zh else home }}#policies">{{ '课程政策' if is_zh else 'Policies' }}</a>
+      <a href="{{ setup }}">{{ '环境配置' if is_zh else 'Setup' }}</a>
+      <a href="{{ project }}">{{ '课程项目' if is_zh else 'Project' }}</a>
+      <a href="{{ resources }}">{{ '资源' if is_zh else 'Resources' }}</a>
     </nav>
-    <div class="stanford-language-switcher" aria-label="Language">
+    <div class="stanford-language-switcher" aria-label="{{ '语言切换' if is_zh else 'Language switcher' }}">
       <a class="{{ '' if is_zh else 'is-active' }}" href="{{ home }}" hreflang="en" lang="en">EN</a>
       <span class="stanford-language-switcher__divider" aria-hidden="true">/</span>
       <a class="{{ 'is-active' if is_zh else '' }}" href="{{ zh_home }}" hreflang="zh" lang="zh-CN">中文</a>

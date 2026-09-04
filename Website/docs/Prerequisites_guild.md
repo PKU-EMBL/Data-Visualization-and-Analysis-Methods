@@ -1,8 +1,8 @@
 # Environment Setup
 
-Basic programming experience is welcome but not required. Before the first class, install Python, R, Rust, and either JupyterLab or Positron. You also need a Unix-like shell. Use Linux or macOS, or WSL on Windows. Keep one project environment and record its dependencies.
+Prior programming experience is welcome but not required. Before the first class, install Python, R, Rust, and either JupyterLab or Positron. You also need a Unix-like shell. Use Linux or macOS, or use WSL on Windows. Keep one project environment and record its dependencies.
 
-The course follows a workflow similar to [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/). Its shell, command-line, development-environment, version-control, and packaging lessons provide useful preparation.
+The course follows a workflow similar to [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/). Its lessons on the shell, command-line tools, development environments, version control, and packaging provide useful preparation.
 
 Install Rust with [rustup](https://rustup.rs/). It provides the `rustc` compiler and `cargo` package manager used in the Rust session.
 

@@ -1,7 +1,7 @@
 # Resource Index
 
 <div class="dvam-lead" markdown>
-This page groups official documentation by analytical task. Tools change over time. Use the official pages for current installation instructions and APIs.
+This page groups official documentation by analytical task. Because tools evolve, use each official site for current installation instructions and API details.
 </div>
 
 ## Environment and Development
@@ -41,7 +41,7 @@ This page groups official documentation by analytical task. Tools change over ti
 
 ## Scientific Visualization and Figure Production
 
-These tools extend Python and R workflows to publication figures, vector artwork, geospatial, earth-science, atmospheric, molecular, single-cell, and multi-omics data.
+These resources extend Python and R workflows to publication figures, vector artwork, geospatial, earth-science, atmospheric, molecular, single-cell, and multi-omics data.
 
 | Tool | Typical task | Official entry point |
 | --- | --- | --- |
@@ -73,7 +73,7 @@ These tools extend Python and R workflows to publication figures, vector artwork
 - [Database Commons](https://ngdc.cncb.ac.cn/databasecommons/) provides a directory of life-science databases.
 - [MIBiG](https://mibig.secondarymetabolites.org/) stores known biosynthetic gene clusters.
 - [BiG-FAM](https://bigfam.bioinformatics.nl/home) groups biosynthetic gene-cluster families.
-- Government portals, international-organization portals, and paper supplements provide additional datasets.
+- Government and international-organization portals, together with paper supplements, provide additional datasets.
 
 ### Dataset Selection Checklist
 

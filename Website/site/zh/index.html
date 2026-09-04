@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Graduate course documentation for data visualization, analysis, and metagenomics">
+        <meta name="description" content="Graduate course documentation for scientific visualization, data analysis, and reproducible research">
       
       
         <meta name="author" content="Zhaorui (Elijah) Jiang">
@@ -117,6 +117,9 @@
 
 
 
+
+
+
 <header class="md-header stanford-header" data-md-component="header">
   <div class="stanford-header__inner">
     <a class="stanford-brand" href="./">
@@ -128,8 +131,11 @@
       <a href="./#schedule">课程安排</a>
       <a href="./#grading">考核</a>
       <a href="./#policies">课程政策</a>
+      <a href="../Prerequisites_guild/">环境配置</a>
+      <a href="../final-project/">课程项目</a>
+      <a href="../api/">资源</a>
     </nav>
-    <div class="stanford-language-switcher" aria-label="Language">
+    <div class="stanford-language-switcher" aria-label="语言切换">
       <a class="" href=".." hreflang="en" lang="en">EN</a>
       <span class="stanford-language-switcher__divider" aria-hidden="true">/</span>
       <a class="is-active" href="./" hreflang="zh" lang="zh-CN">中文</a>
@@ -404,6 +410,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Token 使用政策
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ai" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -442,10 +459,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#further-information" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Further Information
+        更多信息
       
     </span>
   </a>
@@ -826,6 +843,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#token" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Token 使用政策
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#ai" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -864,10 +892,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#further-information" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Further Information
+        更多信息
       
     </span>
   </a>
@@ -900,8 +928,8 @@
 <h1 class="course-site-title" id="_1">数据可视化与分析方法<a class="headerlink" href="#_1" title="Permanent link">¶</a></h1>
 <h2 id="intro">课程概览<a class="headerlink" href="#intro" title="Permanent link">¶</a></h2>
 <p><strong>2026–2027 秋季学期</strong></p>
-<p>本研究生课程介绍数据可视化与分析的实用方法，面向编程或计算研究经验较少的学生。课程从第二次课开始引入 AI 辅助可视化，并逐步讲解 Vibe Coding、多智能体工具、Linux 与命令行、开发环境、调试、版本控制、可复现环境和代码质量。随后安排 Python 与 R 各两次课，并用一节课快速了解 Rust 和 Julia。最后四次课聚焦科研绘图：论文发表规范、配色与字体、矢量绘图流程、地球与大气科学及组学领域工具，以及结合 MCP、SVG、预设样式和分子可视化的 AI 辅助制图。宏基因组学作为其中一个应用场景。</p>
-<p>学生将通过引导式练习和近期文献学习，在完成小型图表后开展完整分析，并将高级可视化连接到地球空间、大气科学与组学数据，最终以团队形式完成原创项目。AI 工具只能作为辅助；每位学生都需要检查生成的代码和图表，并对分析解释、数据隐私和结果可复现性负责。</p>
+<p>本研究生课程介绍数据可视化与分析的实用方法，面向编程或计算研究经验较少的学生。第二次课开始学习 AI 辅助可视化，包括 Vibe Coding 和多智能体工作流。随后建立 Linux、命令行、开发环境、调试、版本控制、可复现环境和代码质量基础。Python 与 R 各安排两次课，再用一节课快速了解 Rust 和 Julia。最后四次课组成科研可视化与绘图系列，涵盖论文规范、视觉语法、矢量流程、地球与大气科学及组学工具，以及结合 MCP、SVG、可复用预设和分子可视化的 AI 辅助绘图。宏基因组学是其中一个应用场景。</p>
+<p>学生通过引导式练习、近期文献和官方文档学习，先完成小型图表，再将高级可视化连接到地球空间、大气科学和组学数据，并以团队形式完成原创项目。AI 工具用于辅助学习，不能替代理解。每位学生都需要检查生成的代码和图表，并对分析解释、数据隐私和结果可复现性负责。</p>
 <h2 id="people">课程团队<a class="headerlink" href="#people" title="Permanent link">¶</a></h2>
 <h3 id="instructors">任课教师<a class="headerlink" href="#instructors" title="Permanent link">¶</a></h3>
 <div class="course-people">
@@ -921,10 +949,10 @@
 </article>
 </div>
 <h2 id="logistics">课程信息<a class="headerlink" href="#logistics" title="Permanent link">¶</a></h2>
-<p>本研究生课程由 <a href="https://see.pkusz.edu.cn/info/1012/1454.htm">Ke Yu</a> 授课，时间为每周二 08:30–11:30，地点为 C303，面向 2026–2027 秋季学期，限 80 人。</p>
+<p>本研究生课程由 <a href="https://see.pkusz.edu.cn/info/1012/1454.htm">Ke Yu</a> 授课。课程安排在 2026–2027 秋季学期，每周二 08:30–11:30 于 C303 上课，限 80 人。</p>
 <p>课前请完成<a href="../Prerequisites_guild/">Environment Setup（环境配置）</a>。</p>
 <h2 id="schedule">课程安排<a class="headerlink" href="#schedule" title="Permanent link">¶</a></h2>
-<p>课程均在周二 08:30–11:30 于 C303 进行。第一次课介绍课程与环境，第二次课开始学习 AI 辅助可视化，随后覆盖计算工具、Python、R、Rust/Julia 和科研绘图。最后几次课使用地球、大气、组学和蛋白质数据作为领域示例。课程安排可能根据任课教师通知调整。</p>
+<p>课程均在周二 08:30–11:30 于 C303 进行。课程从 AI 辅助可视化和计算基础开始，随后学习 Python、R、Rust/Julia 与高级可视化。最后四次课组成科研可视化与绘图系列，使用地球、大气、组学和蛋白质数据作为领域示例。课程安排以任课教师通知为准。</p>
 <table>
 <thead>
 <tr>
@@ -1023,28 +1051,28 @@
 <tr>
 <td>13</td>
 <td>2026 年 12 月 15 日</td>
-<td>科研可视化与绘图系列（III）：领域可视化 — 地球 + 大气 + 组学</td>
+<td>科研可视化与绘图系列（III）：领域可视化，地球 + 大气 + 组学</td>
 <td><a href="https://github.com/qgis/QGIS">QGIS</a><br><a href="https://docs.xarray.dev/en/stable/">xarray Documentation</a><br><a href="https://cartopy.readthedocs.io/stable/">Cartopy Documentation</a><br><a href="https://www.pygmt.org/latest/">PyGMT Documentation</a><br><a href="https://unidata.github.io/MetPy/latest/">MetPy Documentation</a><br><a href="https://arm-doe.github.io/pyart/">Py-ART Documentation</a><br><a href="https://scverse.org/learn/">scverse Getting Started</a><br><a href="https://scanpy.scverse.org/en/stable/tutorials/plotting/index.html">Scanpy Plotting</a><br><a href="https://omicverse.readthedocs.io/en/latest/index.html">OmicVerse Documentation</a><br><a href="https://vitessce.io/docs/">Vitessce Documentation</a></td>
 <td></td>
 </tr>
 <tr>
 <td>14</td>
 <td>2026 年 12 月 22 日</td>
-<td>科研可视化与绘图系列（IV）：AI 辅助绘图 — MCP + SVG + 蛋白质预设</td>
-<td><a href="https://modelcontextprotocol.io/specification/2025-06-18/server/tools">MCP Tools</a><br><a href="https://ts.sdk.modelcontextprotocol.io/v2/">MCP TypeScript SDK</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Reference">SVG Reference</a><br><a href="https://www.cgl.ucsf.edu/chimerax/docs/user/index.html">ChimeraX User Guide</a><br><a href="https://www.cgl.ucsf.edu/chimerax/docs/user/commands/preset.html">ChimeraX Preset command</a><br><a href="https://molstar.org/viewer-docs/">Mol* Viewer</a><br><a href="https://www.rcsb.org/">RCSB Protein Data Bank</a></td>
+<td>科研可视化与绘图系列（IV）：AI 辅助绘图，MCP + SVG + 蛋白质预设</td>
+<td><a href="https://modelcontextprotocol.org/specification/2025-06-18/server/tools">MCP Tools</a><br><a href="https://ts.sdk.modelcontextprotocol.io/v2/">MCP TypeScript SDK</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Reference">SVG Reference</a><br><a href="https://www.cgl.ucsf.edu/chimerax/docs/user/index.html">ChimeraX User Guide</a><br><a href="https://www.cgl.ucsf.edu/chimerax/docs/user/commands/preset.html">ChimeraX Preset command</a><br><a href="https://molstar.org/viewer-docs/">Mol* Viewer</a><br><a href="https://www.rcsb.org/">RCSB Protein Data Bank</a></td>
 <td></td>
 </tr>
 <tr>
 <td>15</td>
 <td>2026 年 12 月 29 日</td>
-<td>Guest Lecture：深度学习（一）— <a href="https://www.sustech.edu.cn/zh/faculties/houshengwei.html">侯圣伟</a></td>
+<td>Guest Lecture：深度学习（一）· <a href="https://www.sustech.edu.cn/zh/faculties/houshengwei.html">侯圣伟</a></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>16</td>
 <td>2027 年 1 月 5 日</td>
-<td>Guest Lecture：深度学习（二）— <a href="https://www.sustech.edu.cn/zh/faculties/houshengwei.html">侯圣伟</a></td>
+<td>Guest Lecture：深度学习（二）· <a href="https://www.sustech.edu.cn/zh/faculties/houshengwei.html">侯圣伟</a></td>
 <td></td>
 <td></td>
 </tr>
@@ -1055,13 +1083,21 @@
 <ul>
 <li><strong>问题定义：</strong> 明确研究问题、数据范围和局限性。</li>
 <li><strong>方法与可视化：</strong> 选择与研究问题匹配的方法、视觉编码和统计摘要。</li>
-<li><strong>可复现性：</strong> 提供可复现实验所需的环境、代码和运行说明。</li>
+<li><strong>可复现性：</strong> 提供复现结果所需的环境、代码和运行说明。</li>
 <li><strong>表达与协作：</strong> 通过 README、报告、图表和贡献记录清晰呈现分析。</li>
 </ul>
 <p>Final Project 的具体要求<strong>待公布</strong>。</p>
 <h2 id="research-projects">Research Projects<a class="headerlink" href="#research-projects" title="Permanent link">¶</a></h2>
-<p>学生将以 2–4 人团队围绕真实问题完成原创分析项目。项目详情：<strong>待公布</strong>。</p>
+<p>学生将以 2–4 人团队围绕真实问题完成原创分析。项目详情：<strong>待公布</strong>。</p>
 <h2 id="policies">课程政策<a class="headerlink" href="#policies" title="Permanent link">¶</a></h2>
+<h3 id="token">Token 使用政策<a class="headerlink" href="#token" title="Permanent link">¶</a></h3>
+<ul>
+<li>研究项目所需的 Token 由学生自行承担费用。</li>
+<li>参与研究项目的学生必须保持可用的 Token 访问权限。没有 Token 的学生应立即退课。</li>
+<li>课程课堂中的 AI 演示与练习全程使用 DeepSeek-V4-Flash。</li>
+<li>不需要 <code>tokenmaxxing</code>。更多 Token 不等于更好的结果；预算应服务于明确的问题、清晰的约束和可靠的验收。</li>
+<li><strong>个人观点：</strong> Token 是 AI 时代的实验耗材。亲自使用，才能形成对成本、质量和延迟的判断。真正稀缺的不是 Token，而是值得花 Token 的问题、清晰的约束和可靠的验收标准。</li>
+</ul>
 <h3 id="ai">学术诚信与 AI 使用<a class="headerlink" href="#ai" title="Permanent link">¶</a></h3>
 <ul>
 <li>引用外部观点、代码、数据、图表和生成式工具。</li>
@@ -1077,7 +1113,7 @@
 <li>提问前请先阅读课程文档。</li>
 <li>课程问题请联系任课教师 <a href="mailto:yuke.sz@pku.edu.cn">Ke Yu</a>。</li>
 </ul>
-<h2 id="further-information">Further Information<a class="headerlink" href="#further-information" title="Permanent link">¶</a></h2>
+<h2 id="_4">更多信息<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
 <ul>
 <li><a href="../Prerequisites_guild/">Environment Setup（环境配置）</a></li>
 <li><a href="../final-project/">Final Project</a></li>

@@ -3,7 +3,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Graduate course documentation for data visualization, analysis, and metagenomics">
+        <meta name="description" content="Graduate course documentation for scientific visualization, data analysis, and reproducible research">
       
       
         <meta name="author" content="Zhaorui (Elijah) Jiang">
@@ -115,6 +115,9 @@
 
 
 
+
+
+
 <header class="md-header stanford-header" data-md-component="header">
   <div class="stanford-header__inner">
     <a class="stanford-brand" href=".">
@@ -126,8 +129,11 @@
       <a href=".#schedule">Schedule</a>
       <a href=".#grading">Grading</a>
       <a href=".#policies">Policies</a>
+      <a href="Prerequisites_guild/">Setup</a>
+      <a href="final-project/">Project</a>
+      <a href="api/">Resources</a>
     </nav>
-    <div class="stanford-language-switcher" aria-label="Language">
+    <div class="stanford-language-switcher" aria-label="Language switcher">
       <a class="is-active" href="." hreflang="en" lang="en">EN</a>
       <span class="stanford-language-switcher__divider" aria-hidden="true">/</span>
       <a class="" href="zh/" hreflang="zh" lang="zh-CN">中文</a>
@@ -373,6 +379,17 @@
   
     <nav class="md-nav" aria-label="Course Policies">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#token-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Token Policy
+      
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#academic-integrity-and-ai-use" class="md-nav__link">
@@ -824,6 +841,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#token-policy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Token Policy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#academic-integrity-and-ai-use" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -898,8 +926,8 @@
 <h1 class="course-site-title" id="methodologies-of-data-visualization-and-analysis">Methodologies of Data Visualization and Analysis<a class="headerlink" href="#methodologies-of-data-visualization-and-analysis" title="Permanent link">¶</a></h1>
 <h2 id="intro">Course Overview<a class="headerlink" href="#intro" title="Permanent link">¶</a></h2>
 <p><strong>Fall 2026–2027</strong></p>
-<p>This graduate course introduces practical methods for data visualization and analysis. It is designed for students who are new to programming or computational research. We begin with a short introduction to AI-assisted visualization. Students can use Vibe Coding and multi-agent tools as learning aids from the second class. We then introduce Linux and command-line tools, development environments, debugging, version control, reproducible environments, and code quality. The programming block gives Python and R two sessions each. It also includes a short survey of Rust and Julia. The final block focuses on scientific figure production: publication conventions, color and typography, vector workflows, domain-specific tools for earth, atmospheric, and omics data, and AI-assisted graphics with MCP, SVG, presets, and molecular visualization. Metagenomics remains one application context.</p>
-<p>Students will follow guided exercises and current documentation. They will build small figures before larger analyses, then connect advanced visualization to geospatial, atmospheric, and omics data. They will also complete an original team project. AI tools are assistants, not substitutes for understanding. Students must check generated code and figures. They remain responsible for interpretations, privacy, and reproducibility.</p>
+<p>This graduate course develops practical methods for data visualization and analysis. It is designed for students with limited programming or computational experience. The second session introduces AI-assisted visualization, including Vibe Coding and multi-agent workflows. We then build a foundation in Linux, command-line tools, development environments, debugging, version control, reproducible environments, and code quality. Python and R each receive two sessions, followed by a short survey of Rust and Julia. The final four sessions form a scientific visualization and figure-production series. Topics include publication standards, visual grammar, vector workflows, domain-specific tools for earth, atmospheric, and omics data, and AI-assisted graphics with MCP, SVG, reusable presets, and molecular visualization. Metagenomics provides one application context.</p>
+<p>Students work through guided exercises, current research literature, and official documentation. They first build small figures, then connect advanced visualizations to geospatial, atmospheric, and omics data. A team project applies these workflows to an original question. AI tools support learning but do not replace understanding. Students must inspect generated code and figures and remain responsible for interpretation, privacy, and reproducibility.</p>
 <h2 id="people">Course Staff<a class="headerlink" href="#people" title="Permanent link">¶</a></h2>
 <h3 id="instructors">Instructors<a class="headerlink" href="#instructors" title="Permanent link">¶</a></h3>
 <div class="course-people">
@@ -919,10 +947,10 @@
 </article>
 </div>
 <h2 id="logistics">Logistics<a class="headerlink" href="#logistics" title="Permanent link">¶</a></h2>
-<p>This is a <strong>graduate-level course</strong> taught by <strong>Ke Yu</strong>. It meets every <strong>Tuesday from 08:30 to 11:30</strong> in <strong>C303</strong>. The course runs during <strong>Fall 2026–2027</strong>. Enrollment is limited to <strong>80 students</strong>.</p>
+<p>This graduate course is taught by <strong>Ke Yu</strong>. It meets every <strong>Tuesday, 08:30–11:30</strong>, in <strong>C303</strong> during <strong>Fall 2026–2027</strong>. Enrollment is limited to <strong>80 students</strong>.</p>
 <p>Before the first meeting, complete the <a href="Prerequisites_guild/">Environment Setup</a>.</p>
 <h2 id="schedule">Schedule<a class="headerlink" href="#schedule" title="Permanent link">¶</a></h2>
-<p>Lectures meet on Tuesdays from 08:30 to 11:30 in C303. The first session introduces AI-assisted visualization. The following sessions cover computational tools, Python, R, and a short Rust/Julia survey. The final sessions focus on scientific figure production and domain-specific visualization, with metagenomics as one application context. Announcements from Instructor Ke Yu take precedence.</p>
+<p>Lectures meet every Tuesday, 08:30–11:30, in C303. The schedule moves from AI-assisted visualization and essential computational tools to Python, R, and a short Rust/Julia survey. The final four sessions form a scientific visualization and figure-production series. Metagenomics is one application context. Announcements from Instructor Ke Yu take precedence.</p>
 <table>
 <thead>
 <tr>
@@ -1021,46 +1049,54 @@
 <tr>
 <td>13</td>
 <td>Tue Dec 15, 2026</td>
-<td>Scientific Visualization and Figure Production (III): Domain-Specific Visualization — Earth + Atmospheric + Omics</td>
+<td>Scientific Visualization and Figure Production (III): Domain-Specific Visualization, Earth + Atmospheric + Omics</td>
 <td><a href="https://github.com/qgis/QGIS">QGIS</a><br><a href="https://docs.xarray.dev/en/stable/">xarray Documentation</a><br><a href="https://cartopy.readthedocs.io/stable/">Cartopy Documentation</a><br><a href="https://www.pygmt.org/latest/">PyGMT Documentation</a><br><a href="https://unidata.github.io/MetPy/latest/">MetPy Documentation</a><br><a href="https://arm-doe.github.io/pyart/">Py-ART Documentation</a><br><a href="https://scverse.org/learn/">scverse Getting Started</a><br><a href="https://scanpy.scverse.org/en/stable/tutorials/plotting/index.html">Scanpy Plotting</a><br><a href="https://omicverse.readthedocs.io/en/latest/index.html">OmicVerse Documentation</a><br><a href="https://vitessce.io/docs/">Vitessce Documentation</a></td>
 <td></td>
 </tr>
 <tr>
 <td>14</td>
 <td>Tue Dec 22, 2026</td>
-<td>Scientific Visualization and Figure Production (IV): AI-Assisted Graphics — MCP + SVG + Protein Presets</td>
+<td>Scientific Visualization and Figure Production (IV): AI-Assisted Graphics, MCP + SVG + Protein Presets</td>
 <td><a href="https://modelcontextprotocol.io/specification/2025-06-18/server/tools">MCP Tools</a><br><a href="https://ts.sdk.modelcontextprotocol.io/v2/">MCP TypeScript SDK</a><br><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Reference">SVG Reference</a><br><a href="https://www.cgl.ucsf.edu/chimerax/docs/user/index.html">ChimeraX User Guide</a><br><a href="https://www.cgl.ucsf.edu/chimerax/docs/user/commands/preset.html">ChimeraX Preset command</a><br><a href="https://molstar.org/viewer-docs/">Mol* Viewer</a><br><a href="https://www.rcsb.org/">RCSB Protein Data Bank</a></td>
 <td></td>
 </tr>
 <tr>
 <td>15</td>
 <td>Tue Dec 29, 2026</td>
-<td>Guest Lecture: Deep Learning (I) — <a href="https://www.sustech.edu.cn/zh/faculties/houshengwei.html">Shengwei Hou</a></td>
+<td>Guest Lecture: Deep Learning (I) · <a href="https://www.sustech.edu.cn/zh/faculties/houshengwei.html">Shengwei Hou</a></td>
 <td></td>
 <td></td>
 </tr>
 <tr>
 <td>16</td>
 <td>Tue Jan 5, 2027</td>
-<td>Guest Lecture: Deep Learning (II) — <a href="https://www.sustech.edu.cn/zh/faculties/houshengwei.html">Shengwei Hou</a></td>
+<td>Guest Lecture: Deep Learning (II) · <a href="https://www.sustech.edu.cn/zh/faculties/houshengwei.html">Shengwei Hou</a></td>
 <td></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <h2 id="grading">Grading<a class="headerlink" href="#grading" title="Permanent link">¶</a></h2>
-<p>Assessment focuses on the project process and final delivery. Official weightings and deadlines published by the instructor take precedence over this overview.</p>
+<p>Assessment emphasizes the project process and final delivery. The instructor's published weights and deadlines take precedence over this overview.</p>
 <ul>
-<li><strong>Problem framing:</strong> Define a clear research question, data scope, and limitation statement.</li>
-<li><strong>Methods and visualization:</strong> Select methods, visual encodings, and statistical summaries that match the question.</li>
-<li><strong>Reproducibility:</strong> Provide the environment, code, and run instructions needed to reproduce the result.</li>
-<li><strong>Communication:</strong> Present the analysis in a clear README, technical report, and set of figures.</li>
-<li><strong>Collaboration:</strong> Record contributions, version-control decisions, and team work.</li>
+<li><strong>Problem framing:</strong> State a clear research question, data scope, and limitations.</li>
+<li><strong>Methods and visualization:</strong> Match methods, visual encodings, and statistical summaries to the question.</li>
+<li><strong>Reproducibility:</strong> Provide the environment, code, and instructions needed to reproduce each result.</li>
+<li><strong>Communication:</strong> Present the analysis in a clear README, report, and set of figures.</li>
+<li><strong>Collaboration:</strong> Document contributions, version-control decisions, and team work.</li>
 </ul>
 <p>Final project details are <strong>to be announced</strong>.</p>
 <h2 id="research-projects">Research Projects<a class="headerlink" href="#research-projects" title="Permanent link">¶</a></h2>
-<p>Teams of 2–4 students will start from a real question and complete an original analysis. Project details: <strong>To be announced.</strong></p>
+<p>Teams of 2–4 students will define a real question and complete an original analysis. Project details: <strong>To be announced.</strong></p>
 <h2 id="policies">Course Policies<a class="headerlink" href="#policies" title="Permanent link">¶</a></h2>
+<h3 id="token-policy">Token Policy<a class="headerlink" href="#token-policy" title="Permanent link">¶</a></h3>
+<ul>
+<li>Students fund the tokens required for their own research work.</li>
+<li>Students undertaking a research project must maintain token access. Without token access, they should withdraw from the course immediately.</li>
+<li>In-class AI demonstrations and exercises use DeepSeek-V4-Flash throughout the course.</li>
+<li><code>Tokenmaxxing</code> is not required. More tokens do not guarantee better results; use a budget that supports a clear question, explicit constraints, and reliable verification.</li>
+<li><strong>Personal view:</strong> Tokens are experimental materials in the AI era. Direct use develops awareness of cost, quality, and latency. The scarce resource is not tokens, but worthwhile questions, clear constraints, and reliable acceptance criteria.</li>
+</ul>
 <h3 id="academic-integrity-and-ai-use">Academic Integrity and AI Use<a class="headerlink" href="#academic-integrity-and-ai-use" title="Permanent link">¶</a></h3>
 <ul>
 <li>Cite external ideas, code, data, figures, and generative tools.</li>
@@ -1074,7 +1110,7 @@
 <h3 id="communication-with-course-staff">Communication with Course Staff<a class="headerlink" href="#communication-with-course-staff" title="Permanent link">¶</a></h3>
 <ul>
 <li>Read the course documentation before raising general questions.</li>
-<li>Contact Instructor Ke Yu at <a href="mailto:yuke.sz@pku.edu.cn">yuke.sz@pku.edu.cn</a> for course-specific questions.</li>
+<li>For course-specific questions, contact Instructor Ke Yu at <a href="mailto:yuke.sz@pku.edu.cn">yuke.sz@pku.edu.cn</a>.</li>
 </ul>
 <h2 id="further-information">Further Information<a class="headerlink" href="#further-information" title="Permanent link">¶</a></h2>
 <ul>

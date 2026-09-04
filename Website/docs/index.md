@@ -9,9 +9,9 @@ hide:
 
 **Fall 2026–2027**
 
-This graduate course introduces practical methods for data visualization and analysis. It is designed for students who are new to programming or computational research. We begin with a short introduction to AI-assisted visualization. Students can use Vibe Coding and multi-agent tools as learning aids from the second class. We then introduce Linux and command-line tools, development environments, debugging, version control, reproducible environments, and code quality. The programming block gives Python and R two sessions each. It also includes a short survey of Rust and Julia. The final block focuses on scientific figure production: publication conventions, color and typography, vector workflows, domain-specific tools for earth, atmospheric, and omics data, and AI-assisted graphics with MCP, SVG, presets, and molecular visualization. Metagenomics remains one application context.
+This graduate course develops practical methods for data visualization and analysis. It is designed for students with limited programming or computational experience. The second session introduces AI-assisted visualization, including Vibe Coding and multi-agent workflows. We then build a foundation in Linux, command-line tools, development environments, debugging, version control, reproducible environments, and code quality. Python and R each receive two sessions, followed by a short survey of Rust and Julia. The final four sessions form a scientific visualization and figure-production series. Topics include publication standards, visual grammar, vector workflows, domain-specific tools for earth, atmospheric, and omics data, and AI-assisted graphics with MCP, SVG, reusable presets, and molecular visualization. Metagenomics provides one application context.
 
-Students will follow guided exercises and current documentation. They will build small figures before larger analyses, then connect advanced visualization to geospatial, atmospheric, and omics data. They will also complete an original team project. AI tools are assistants, not substitutes for understanding. Students must check generated code and figures. They remain responsible for interpretations, privacy, and reproducibility.
+Students work through guided exercises, current research literature, and official documentation. They first build small figures, then connect advanced visualizations to geospatial, atmospheric, and omics data. A team project applies these workflows to an original question. AI tools support learning but do not replace understanding. Students must inspect generated code and figures and remain responsible for interpretation, privacy, and reproducibility.
 
 ## Course Staff { #people }
 
@@ -42,13 +42,13 @@ CA
 
 ## Logistics { #logistics }
 
-This is a **graduate-level course** taught by **Ke Yu**. It meets every **Tuesday from 08:30 to 11:30** in **C303**. The course runs during **Fall 2026–2027**. Enrollment is limited to **80 students**.
+This graduate course is taught by **Ke Yu**. It meets every **Tuesday, 08:30–11:30**, in **C303** during **Fall 2026–2027**. Enrollment is limited to **80 students**.
 
 Before the first meeting, complete the [Environment Setup](Prerequisites_guild.md).
 
 ## Schedule { #schedule }
 
-Lectures meet on Tuesdays from 08:30 to 11:30 in C303. The first session introduces AI-assisted visualization. The following sessions cover computational tools, Python, R, and a short Rust/Julia survey. The final sessions focus on scientific figure production and domain-specific visualization, with metagenomics as one application context. Announcements from Instructor Ke Yu take precedence.
+Lectures meet every Tuesday, 08:30–11:30, in C303. The schedule moves from AI-assisted visualization and essential computational tools to Python, R, and a short Rust/Julia survey. The final four sessions form a scientific visualization and figure-production series. Metagenomics is one application context. Announcements from Instructor Ke Yu take precedence.
 
 | # | Date | Description | Reading Material | Deadlines |
 | --- | --- | --- | --- | --- |
@@ -64,28 +64,36 @@ Lectures meet on Tuesdays from 08:30 to 11:30 in C303. The first session introdu
 | 10 | Tue Nov 24, 2026 | Advanced Visualization with Python and R | [Matplotlib Documentation](https://matplotlib.org/stable/)<br>[Seaborn Documentation](https://seaborn.pydata.org/)<br>[ggplot2 Documentation](https://ggplot2.tidyverse.org/)<br>[Vega-Lite](https://vega.github.io/vega-lite/)<br>[QGIS](https://github.com/qgis/QGIS)<br>[xarray Documentation](https://docs.xarray.dev/en/stable/)<br>[Cartopy Documentation](https://cartopy.readthedocs.io/stable/)<br>[GeoPandas Mapping](https://geopandas.org/en/stable/docs/user_guide/mapping.html)<br>[PyGMT Documentation](https://www.pygmt.org/latest/)<br>[MetPy Documentation](https://unidata.github.io/MetPy/latest/)<br>[Py-ART Documentation](https://arm-doe.github.io/pyart/)<br>[wrf-python Plotting Examples](https://wrf-python.readthedocs.io/en/main/plot.html)<br>[Iris Documentation](https://scitools-iris.readthedocs.io/en/stable/)<br>[scverse Getting Started](https://scverse.org/learn/)<br>[Scanpy Plotting](https://scanpy.scverse.org/en/stable/tutorials/plotting/index.html)<br>[OmicVerse Documentation](https://omicverse.readthedocs.io/en/latest/index.html)<br>[Vitessce Documentation](https://vitessce.io/docs/) |  |
 | 11 | Tue Dec 1, 2026 | Scientific Visualization and Figure Production (I): Publication Standards + Visual Grammar | [Nature Figure Guide](https://research-figure-guide.nature.com/)<br>[Nature: Preparing figures](https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/)<br>[Matplotlib: Choosing colormaps](https://matplotlib.org/stable/users/explain/colors/colormaps.html)<br>[ColorBrewer](https://colorbrewer2.org/) |  |
 | 12 | Tue Dec 8, 2026 | Scientific Visualization and Figure Production (II): Illustrator + PowerPoint + BioRender + SVG | [Adobe Illustrator drawing tools](https://www.adobe.com/learn/illustrator/web/drawing-tools-basics)<br>[PowerPoint flow charts](https://support.microsoft.com/en-us/office/add-a-flow-chart-to-a-slide-in-powerpoint)<br>[BioRender templates](https://www.biorender.com/templates)<br>[MDN SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)<br>[Inkscape Manual](https://inkscape-manuals.readthedocs.io/en/latest/) |  |
-| 13 | Tue Dec 15, 2026 | Scientific Visualization and Figure Production (III): Domain-Specific Visualization — Earth + Atmospheric + Omics | [QGIS](https://github.com/qgis/QGIS)<br>[xarray Documentation](https://docs.xarray.dev/en/stable/)<br>[Cartopy Documentation](https://cartopy.readthedocs.io/stable/)<br>[PyGMT Documentation](https://www.pygmt.org/latest/)<br>[MetPy Documentation](https://unidata.github.io/MetPy/latest/)<br>[Py-ART Documentation](https://arm-doe.github.io/pyart/)<br>[scverse Getting Started](https://scverse.org/learn/)<br>[Scanpy Plotting](https://scanpy.scverse.org/en/stable/tutorials/plotting/index.html)<br>[OmicVerse Documentation](https://omicverse.readthedocs.io/en/latest/index.html)<br>[Vitessce Documentation](https://vitessce.io/docs/) |  |
-| 14 | Tue Dec 22, 2026 | Scientific Visualization and Figure Production (IV): AI-Assisted Graphics — MCP + SVG + Protein Presets | [MCP Tools](https://modelcontextprotocol.io/specification/2025-06-18/server/tools)<br>[MCP TypeScript SDK](https://ts.sdk.modelcontextprotocol.io/v2/)<br>[SVG Reference](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference)<br>[ChimeraX User Guide](https://www.cgl.ucsf.edu/chimerax/docs/user/index.html)<br>[ChimeraX Preset command](https://www.cgl.ucsf.edu/chimerax/docs/user/commands/preset.html)<br>[Mol* Viewer](https://molstar.org/viewer-docs/)<br>[RCSB Protein Data Bank](https://www.rcsb.org/) |  |
-| 15 | Tue Dec 29, 2026 | Guest Lecture: Deep Learning (I) — [Shengwei Hou](https://www.sustech.edu.cn/zh/faculties/houshengwei.html) |  |  |
-| 16 | Tue Jan 5, 2027 | Guest Lecture: Deep Learning (II) — [Shengwei Hou](https://www.sustech.edu.cn/zh/faculties/houshengwei.html) |  |  |
+| 13 | Tue Dec 15, 2026 | Scientific Visualization and Figure Production (III): Domain-Specific Visualization, Earth + Atmospheric + Omics | [QGIS](https://github.com/qgis/QGIS)<br>[xarray Documentation](https://docs.xarray.dev/en/stable/)<br>[Cartopy Documentation](https://cartopy.readthedocs.io/stable/)<br>[PyGMT Documentation](https://www.pygmt.org/latest/)<br>[MetPy Documentation](https://unidata.github.io/MetPy/latest/)<br>[Py-ART Documentation](https://arm-doe.github.io/pyart/)<br>[scverse Getting Started](https://scverse.org/learn/)<br>[Scanpy Plotting](https://scanpy.scverse.org/en/stable/tutorials/plotting/index.html)<br>[OmicVerse Documentation](https://omicverse.readthedocs.io/en/latest/index.html)<br>[Vitessce Documentation](https://vitessce.io/docs/) |  |
+| 14 | Tue Dec 22, 2026 | Scientific Visualization and Figure Production (IV): AI-Assisted Graphics, MCP + SVG + Protein Presets | [MCP Tools](https://modelcontextprotocol.io/specification/2025-06-18/server/tools)<br>[MCP TypeScript SDK](https://ts.sdk.modelcontextprotocol.io/v2/)<br>[SVG Reference](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference)<br>[ChimeraX User Guide](https://www.cgl.ucsf.edu/chimerax/docs/user/index.html)<br>[ChimeraX Preset command](https://www.cgl.ucsf.edu/chimerax/docs/user/commands/preset.html)<br>[Mol* Viewer](https://molstar.org/viewer-docs/)<br>[RCSB Protein Data Bank](https://www.rcsb.org/) |  |
+| 15 | Tue Dec 29, 2026 | Guest Lecture: Deep Learning (I) · [Shengwei Hou](https://www.sustech.edu.cn/zh/faculties/houshengwei.html) |  |  |
+| 16 | Tue Jan 5, 2027 | Guest Lecture: Deep Learning (II) · [Shengwei Hou](https://www.sustech.edu.cn/zh/faculties/houshengwei.html) |  |  |
 
 ## Grading { #grading }
 
-Assessment focuses on the project process and final delivery. Official weightings and deadlines published by the instructor take precedence over this overview.
+Assessment emphasizes the project process and final delivery. The instructor's published weights and deadlines take precedence over this overview.
 
-- **Problem framing:** Define a clear research question, data scope, and limitation statement.
-- **Methods and visualization:** Select methods, visual encodings, and statistical summaries that match the question.
-- **Reproducibility:** Provide the environment, code, and run instructions needed to reproduce the result.
-- **Communication:** Present the analysis in a clear README, technical report, and set of figures.
-- **Collaboration:** Record contributions, version-control decisions, and team work.
+- **Problem framing:** State a clear research question, data scope, and limitations.
+- **Methods and visualization:** Match methods, visual encodings, and statistical summaries to the question.
+- **Reproducibility:** Provide the environment, code, and instructions needed to reproduce each result.
+- **Communication:** Present the analysis in a clear README, report, and set of figures.
+- **Collaboration:** Document contributions, version-control decisions, and team work.
 
 Final project details are **to be announced**.
 
 ## Research Projects
 
-Teams of 2–4 students will start from a real question and complete an original analysis. Project details: **To be announced.**
+Teams of 2–4 students will define a real question and complete an original analysis. Project details: **To be announced.**
 
 ## Course Policies { #policies }
+
+### Token Policy
+
+- Students fund the tokens required for their own research work.
+- Students undertaking a research project must maintain token access. Without token access, they should withdraw from the course immediately.
+- In-class AI demonstrations and exercises use DeepSeek-V4-Flash throughout the course.
+- `Tokenmaxxing` is not required. More tokens do not guarantee better results; use a budget that supports a clear question, explicit constraints, and reliable verification.
+- **Personal view:** Tokens are experimental materials in the AI era. Direct use develops awareness of cost, quality, and latency. The scarce resource is not tokens, but worthwhile questions, clear constraints, and reliable acceptance criteria.
 
 ### Academic Integrity and AI Use
 
@@ -100,7 +108,7 @@ Teams of 2–4 students will start from a real question and complete an original
 ### Communication with Course Staff
 
 - Read the course documentation before raising general questions.
-- Contact Instructor Ke Yu at [yuke.sz@pku.edu.cn](mailto:yuke.sz@pku.edu.cn) for course-specific questions.
+- For course-specific questions, contact Instructor Ke Yu at [yuke.sz@pku.edu.cn](mailto:yuke.sz@pku.edu.cn).
 
 ## Further Information
 

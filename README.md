@@ -1,6 +1,6 @@
 # Methodologies of Data Visualization and Analysis
 
-> A graduate course in reproducible data visualization, analysis, and metagenomics workflows.
+> A graduate course in reproducible data visualization, analysis, and scientific figure production.
 
 <p align="center">
   <img src="Website/docs/img/yu-lab-logo.png" alt="PKU EMBL Yu's Lab" width="240">
@@ -10,7 +10,7 @@
   <strong>PKU EMBL · Course Documentation · Fall 2026–2027</strong>
 </p>
 
-This repository contains the current English documentation for **Methodologies of Data Visualization and Analysis** at PKU EMBL. The course introduces Linux command-line tools, Python, R, data visualization, reproducible research, and metagenomics analysis. AI-assisted coding is introduced as a support tool. The website opens in English by default; use the `EN / 中文` switcher in the upper-right corner to open the Chinese course page.
+This repository contains the current English documentation for **Methodologies of Data Visualization and Analysis** at PKU EMBL. The course combines Linux command-line tools, Python, R, scientific visualization, reproducible research, and domain examples such as metagenomics. AI-assisted coding supports the learning workflow. The website opens in English by default; use the `EN / 中文` switcher in the upper-right corner to open the Chinese course page.
 
 ## Course information
 
@@ -27,9 +27,9 @@ This repository contains the current English documentation for **Methodologies o
 
 **Fall 2026–2027**
 
-This graduate course introduces practical methods for data visualization and analysis. It is designed for students who are new to programming or computational research. We begin with a short introduction to AI-assisted visualization. Students can use Vibe Coding and multi-agent tools as learning aids from the second class. We then introduce Linux and command-line tools, development environments, debugging, version control, reproducible environments, and code quality. The programming block gives Python and R two sessions each. It also includes a short survey of Rust and Julia. The final block applies these methods to metagenomics. Topics include study design, quality control, assembly, taxonomic and functional profiles, diversity, metagenome-assembled genomes, and interactive visualization.
+This graduate course develops practical methods for data visualization and analysis. The second session introduces AI-assisted visualization, including Vibe Coding and multi-agent workflows. We then build a foundation in Linux, command-line tools, development environments, debugging, version control, reproducible environments, and code quality. Python and R each receive two sessions, followed by a short Rust and Julia survey. The final four sessions form a scientific visualization and figure-production series that connects publication graphics with earth, atmospheric, omics, and molecular examples.
 
-Students will follow guided exercises and current documentation. They will build small figures before larger analyses. They will also complete an original team project. AI tools are assistants, not substitutes for understanding. Students must check generated code and figures. They remain responsible for interpretations, privacy, and reproducibility.
+Students work through guided exercises, current research literature, and official documentation. They first build small figures, then apply the same workflow to larger analyses and an original team project. AI tools support learning but do not replace understanding. Students must inspect generated code and figures and remain responsible for interpretation, privacy, and reproducibility.
 
 ## Course Staff
 
@@ -38,11 +38,15 @@ Students will follow guided exercises and current documentation. They will build
 
 ## Logistics
 
-This is a **graduate-level course** taught by **Ke Yu**. It meets every **Tuesday from 08:30 to 11:30** in **C303**. The course runs during **Fall 2026–2027**. Enrollment is limited to **80 students**.
+This graduate course is taught by **Ke Yu**. It meets every **Tuesday, 08:30–11:30**, in **C303** during **Fall 2026–2027**. Enrollment is limited to **80 students**.
+
+## Token Policy
+
+Students fund the tokens used in their own research work. Research-project participants must maintain token access and should withdraw from the course immediately if they cannot do so. In-class AI demonstrations use DeepSeek-V4-Flash throughout. `Tokenmaxxing` is unnecessary: use a budget that supports a clear question, explicit constraints, and reliable verification. Tokens are experimental materials for developing awareness of cost, quality, and latency.
 
 ## Schedule
 
-The homepage organizes the schedule as **# · Date · Description · Reading Material · Deadlines**. The course starts with AI-assisted visualization, then covers a compact set of essential tools based on [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/), Python and R sessions that build from simple to advanced visualization, and a short Rust/Julia survey. The final block is a four-part Scientific Visualization and Figure Production series covering publication graphics, vector and presentation tools, QGIS and atmospheric visualization, the scverse/OmicVerse ecosystem, MCP-controlled AI graphics, SVG, and protein visualization with ChimeraX. Reading Material lists the planned resources, while Deadlines will be announced by the instructor.
+The homepage organizes the schedule as **# · Date · Description · Reading Material · Deadlines**. Sessions move from AI-assisted visualization and essential tools to Python, R, advanced visualization, and a short Rust/Julia survey. The final four sessions form a Scientific Visualization and Figure Production series covering publication graphics, domain-specific tools, MCP-controlled AI graphics, SVG, and protein visualization with ChimeraX. Reading Material lists planned resources; the instructor will announce Deadlines.
 
 ## Documentation
 
