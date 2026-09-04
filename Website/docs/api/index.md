@@ -39,12 +39,18 @@ This page groups official documentation by analytical task. Tools change over ti
 | tidyr | Reshape tidy data | [tidyr Documentation](https://tidyr.tidyverse.org/) |
 | rpy2 | Call R from Python | [rpy2 Documentation](https://rpy2.github.io/doc/latest/html/) |
 
-## Scientific Visualization
+## Scientific Visualization and Figure Production
 
-These tools extend Python and R workflows to geospatial, earth-science, atmospheric, single-cell, and multi-omics data.
+These tools extend Python and R workflows to publication figures, vector artwork, geospatial, earth-science, atmospheric, molecular, single-cell, and multi-omics data.
 
 | Tool | Typical task | Official entry point |
 | --- | --- | --- |
+| Nature Figure Guide | Apply publication specifications for color, typography, sizing, and export | [Nature Figure Guide](https://research-figure-guide.nature.com/) |
+| Adobe Illustrator | Edit publication-ready vector artwork and figure panels | [Drawing tools](https://www.adobe.com/learn/illustrator/web/drawing-tools-basics) |
+| PowerPoint | Draft diagrams, flow charts, and presentation figures | [Flow charts](https://support.microsoft.com/en-us/office/add-a-flow-chart-to-a-slide-in-powerpoint) |
+| BioRender | Assemble biology diagrams from editable icons and templates | [Templates](https://www.biorender.com/templates) |
+| SVG | Store figures as editable, scalable vector graphics | [MDN SVG](https://developer.mozilla.org/en-US/docs/Web/SVG) |
+| MCP | Connect AI models to figure tools, files, and reusable resources | [Tools specification](https://modelcontextprotocol.io/specification/2025-06-18/server/tools) |
 | QGIS | Explore, analyze, and publish raster, vector, mesh, and point-cloud data | [QGIS repository](https://github.com/qgis/QGIS) |
 | xarray | Work with labeled multidimensional arrays, NetCDF, and climate or earth-science data | [xarray Documentation](https://docs.xarray.dev/en/stable/) |
 | Cartopy | Map data with coordinate reference systems and projections | [Cartopy Documentation](https://cartopy.readthedocs.io/stable/) |
@@ -58,6 +64,9 @@ These tools extend Python and R workflows to geospatial, earth-science, atmosphe
 | Scanpy | Plot embeddings, expression summaries, and clustering results | [Plotting tutorials](https://scanpy.scverse.org/en/stable/tutorials/plotting/index.html) |
 | OmicVerse | Explore transcriptomics, single-cell, spatial, and multi-omics data | [OmicVerse Documentation](https://omicverse.readthedocs.io/en/latest/index.html) |
 | Vitessce | Build linked interactive views for spatial and single-cell data | [Vitessce Documentation](https://vitessce.io/docs/) |
+| ChimeraX | Render and annotate protein and molecular structures | [ChimeraX User Guide](https://www.cgl.ucsf.edu/chimerax/docs/user/index.html) |
+| ChimeraX presets | Apply reusable publication and molecular display styles | [Preset command](https://www.cgl.ucsf.edu/chimerax/docs/user/commands/preset.html) |
+| Mol* | Create interactive web-based molecular visualizations | [Mol* Viewer](https://molstar.org/viewer-docs/) |
 
 ## Data Discovery
 

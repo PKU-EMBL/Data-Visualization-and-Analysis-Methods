@@ -9,7 +9,7 @@ hide:
 
 **2026–2027 秋季学期**
 
-本研究生课程介绍数据可视化与分析的实用方法，面向编程或计算研究经验较少的学生。课程从第二次课开始引入 AI 辅助可视化，并逐步讲解 Vibe Coding、多智能体工具、Linux 与命令行、开发环境、调试、版本控制、可复现环境和代码质量。随后安排 Python 与 R 各两次课，并用一节课快速了解 Rust 和 Julia。最后四次课聚焦宏基因组学，覆盖研究设计、质量控制、组装、分类与功能注释、多样性、宏基因组组装基因组（MAGs）以及交互式可视化。
+本研究生课程介绍数据可视化与分析的实用方法，面向编程或计算研究经验较少的学生。课程从第二次课开始引入 AI 辅助可视化，并逐步讲解 Vibe Coding、多智能体工具、Linux 与命令行、开发环境、调试、版本控制、可复现环境和代码质量。随后安排 Python 与 R 各两次课，并用一节课快速了解 Rust 和 Julia。最后四次课聚焦科研绘图：论文发表规范、配色与字体、矢量绘图流程、地球与大气科学及组学领域工具，以及结合 MCP、SVG、预设样式和分子可视化的 AI 辅助制图。宏基因组学作为其中一个应用场景。
 
 学生将通过引导式练习和近期文献学习，在完成小型图表后开展完整分析，并将高级可视化连接到地球空间、大气科学与组学数据，最终以团队形式完成原创项目。AI 工具只能作为辅助；每位学生都需要检查生成的代码和图表，并对分析解释、数据隐私和结果可复现性负责。
 
@@ -48,7 +48,7 @@ hide:
 
 ## 课程安排 { #schedule }
 
-课程均在周二 08:30–11:30 于 C303 进行。第一次课介绍课程与环境，第二次课开始学习 AI 辅助可视化，随后覆盖计算工具、Python、R、Rust/Julia 和宏基因组学。课程安排可能根据任课教师通知调整。
+课程均在周二 08:30–11:30 于 C303 进行。第一次课介绍课程与环境，第二次课开始学习 AI 辅助可视化，随后覆盖计算工具、Python、R、Rust/Julia 和科研绘图。最后几次课使用地球、大气、组学和蛋白质数据作为领域示例。课程安排可能根据任课教师通知调整。
 
 | # | 日期 | 内容 | Reading Material | Deadlines |
 | --- | --- | --- | --- | --- |
@@ -62,10 +62,10 @@ hide:
 | 8 | 2026 年 11 月 10 日 | R II：数据框 + 简单可视化 | [R for Data Science](https://r4ds.hadley.nz/)<br>[dplyr Documentation](https://dplyr.tidyverse.org/)<br>[tidyr Documentation](https://tidyr.tidyverse.org/)<br>[ggplot2 Documentation](https://ggplot2.tidyverse.org/) |  |
 | 9 | 2026 年 11 月 17 日 | AI 驱动的新语言学习：Rust + Julia | [The Rust Programming Language](https://doc.rust-lang.org/book/)<br>[Rust by Example](https://doc.rust-lang.org/rust-by-example/)<br>[The Cargo Book](https://doc.rust-lang.org/cargo/)<br>[Julia Documentation](https://docs.julialang.org/en/v1/)<br>[Julia DataFrames](https://dataframes.juliadata.org/stable/) |  |
 | 10 | 2026 年 11 月 24 日 | Python 与 R 的高级可视化 | [Matplotlib Documentation](https://matplotlib.org/stable/)<br>[Seaborn Documentation](https://seaborn.pydata.org/)<br>[ggplot2 Documentation](https://ggplot2.tidyverse.org/)<br>[Vega-Lite](https://vega.github.io/vega-lite/)<br>[QGIS](https://github.com/qgis/QGIS)<br>[xarray Documentation](https://docs.xarray.dev/en/stable/)<br>[Cartopy Documentation](https://cartopy.readthedocs.io/stable/)<br>[GeoPandas Mapping](https://geopandas.org/en/stable/docs/user_guide/mapping.html)<br>[PyGMT Documentation](https://www.pygmt.org/latest/)<br>[MetPy Documentation](https://unidata.github.io/MetPy/latest/)<br>[Py-ART Documentation](https://arm-doe.github.io/pyart/)<br>[wrf-python Plotting Examples](https://wrf-python.readthedocs.io/en/main/plot.html)<br>[Iris Documentation](https://scitools-iris.readthedocs.io/en/stable/)<br>[scverse Getting Started](https://scverse.org/learn/)<br>[Scanpy Plotting](https://scanpy.scverse.org/en/stable/tutorials/plotting/index.html)<br>[OmicVerse Documentation](https://omicverse.readthedocs.io/en/latest/index.html)<br>[Vitessce Documentation](https://vitessce.io/docs/) |  |
-| 11 | 2026 年 12 月 1 日 | 宏基因组学 I：基础知识 + 数据质量控制 | [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)<br>[MultiQC](https://multiqc.info/)<br>[NCBI SRA Toolkit](https://github.com/ncbi/sra-tools) |  |
-| 12 | 2026 年 12 月 8 日 | 宏基因组学 II：组装 + 分箱 + MAGs | [MEGAHIT](https://github.com/voutcn/megahit)<br>[MetaBAT 2](https://bitbucket.org/berkeleylab/metabat/src/master/README.md)<br>[CheckM2](https://github.com/chklovski/CheckM2)<br>[BASALT](https://github.com/PKU-EMBL/BASALT) |  |
-| 13 | 2026 年 12 月 15 日 | 宏基因组学 III：分类注释与群落 profiling | [Kraken 2 Manual](https://github.com/DerrickWood/kraken2/wiki/Manual)<br>[Bracken](https://ccb.jhu.edu/software/bracken/)<br>[MetaPhlAn](https://github.com/biobakery/MetaPhlAn)<br>[Sourmash](https://sourmash.readthedocs.io/) |  |
-| 14 | 2026 年 12 月 22 日 | 宏基因组学 IV：功能注释 + 多样性 + 演化 | [HUMAnN](https://github.com/biobakery/humann)<br>[MetaCyc](https://metacyc.org/)<br>[phyloseq](https://doi.org/10.1371/journal.pcbi.1003531)<br>[vegan](https://cran.r-project.org/package=vegan)<br>[anvi'o Documentation](https://anvio.org/learn/) |  |
+| 11 | 2026 年 12 月 1 日 | 科研可视化与绘图系列（I）：论文发表规范 + 视觉语法 | [Nature Figure Guide](https://research-figure-guide.nature.com/)<br>[Nature：Preparing figures](https://research-figure-guide.nature.com/figures/preparing-figures-our-specifications/)<br>[Matplotlib：Choosing colormaps](https://matplotlib.org/stable/users/explain/colors/colormaps.html)<br>[ColorBrewer](https://colorbrewer2.org/) |  |
+| 12 | 2026 年 12 月 8 日 | 科研可视化与绘图系列（II）：Illustrator + PowerPoint + BioRender + SVG | [Adobe Illustrator drawing tools](https://www.adobe.com/learn/illustrator/web/drawing-tools-basics)<br>[PowerPoint flow charts](https://support.microsoft.com/en-us/office/add-a-flow-chart-to-a-slide-in-powerpoint)<br>[BioRender templates](https://www.biorender.com/templates)<br>[MDN SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)<br>[Inkscape Manual](https://inkscape-manuals.readthedocs.io/en/latest/) |  |
+| 13 | 2026 年 12 月 15 日 | 科研可视化与绘图系列（III）：领域可视化 — 地球 + 大气 + 组学 | [QGIS](https://github.com/qgis/QGIS)<br>[xarray Documentation](https://docs.xarray.dev/en/stable/)<br>[Cartopy Documentation](https://cartopy.readthedocs.io/stable/)<br>[PyGMT Documentation](https://www.pygmt.org/latest/)<br>[MetPy Documentation](https://unidata.github.io/MetPy/latest/)<br>[Py-ART Documentation](https://arm-doe.github.io/pyart/)<br>[scverse Getting Started](https://scverse.org/learn/)<br>[Scanpy Plotting](https://scanpy.scverse.org/en/stable/tutorials/plotting/index.html)<br>[OmicVerse Documentation](https://omicverse.readthedocs.io/en/latest/index.html)<br>[Vitessce Documentation](https://vitessce.io/docs/) |  |
+| 14 | 2026 年 12 月 22 日 | 科研可视化与绘图系列（IV）：AI 辅助绘图 — MCP + SVG + 蛋白质预设 | [MCP Tools](https://modelcontextprotocol.io/specification/2025-06-18/server/tools)<br>[MCP TypeScript SDK](https://ts.sdk.modelcontextprotocol.io/v2/)<br>[SVG Reference](https://developer.mozilla.org/en-US/docs/Web/SVG/Reference)<br>[ChimeraX User Guide](https://www.cgl.ucsf.edu/chimerax/docs/user/index.html)<br>[ChimeraX Preset command](https://www.cgl.ucsf.edu/chimerax/docs/user/commands/preset.html)<br>[Mol* Viewer](https://molstar.org/viewer-docs/)<br>[RCSB Protein Data Bank](https://www.rcsb.org/) |  |
 | 15 | 2026 年 12 月 29 日 | Guest Lecture：深度学习（一）— [侯圣伟](https://www.sustech.edu.cn/zh/faculties/houshengwei.html) |  |  |
 | 16 | 2027 年 1 月 5 日 | Guest Lecture：深度学习（二）— [侯圣伟](https://www.sustech.edu.cn/zh/faculties/houshengwei.html) |  |  |
 
