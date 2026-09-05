@@ -576,6 +576,40 @@ body {
   transform: translateY(-2px);
 }
 
+.course-facts {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.65rem;
+  margin: 1.35rem 0 2rem;
+}
+
+.course-facts > div {
+  min-width: 0;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--stanford-rule, var(--course-border));
+  background: var(--course-surface, #ffffff);
+}
+
+.course-facts span,
+.course-facts strong {
+  display: block;
+}
+
+.course-facts span {
+  margin-bottom: 0.18rem;
+  color: var(--course-muted, #666666);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.course-facts strong {
+  color: var(--stanford-ink, #333333);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
 .md-typeset .dvam-stats p {
   margin: 0;
   color: var(--course-muted);
@@ -890,6 +924,10 @@ div.doc-contents:not(.first) {
     width: 100%;
   }
 
+  .course-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .dvam-page-meta {
     flex-direction: column;
     gap: 0.25rem;
@@ -977,6 +1015,27 @@ body {
   box-shadow: none;
 }
 
+.skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 1rem;
+  z-index: 110;
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.25rem;
+  background: #ffffff;
+  color: var(--stanford-cardinal) !important;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition: top 120ms ease;
+}
+
+.skip-link:focus {
+  top: 0.6rem;
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
 .stanford-header__inner {
   position: relative;
   display: flex;
@@ -989,13 +1048,46 @@ body {
 }
 
 .stanford-brand {
+  display: flex;
   flex: 1 0 100%;
-  padding: 12px 100px 4px 0;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 8px 100px 4px 0;
   color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.stanford-brand__logo {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 38px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.stanford-brand__text {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.08rem;
+}
+
+.stanford-brand__title {
+  overflow: hidden;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.2;
-  text-decoration: none !important;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.stanford-brand__institution {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
 .stanford-nav {
@@ -1091,7 +1183,7 @@ body {
 }
 
 .md-content__inner > h2:first-of-type {
-  margin-top: 0 !important;
+  margin-top: 1.35rem !important;
 }
 
 .md-typeset {
@@ -1281,8 +1373,22 @@ body {
   }
 
   .stanford-brand {
-    padding: 10px 82px 4px 0;
+    gap: 0.5rem;
+    padding: 8px 82px 4px 0;
+  }
+
+  .stanford-brand__logo {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+  }
+
+  .stanford-brand__title {
     font-size: 16px;
+  }
+
+  .stanford-brand__institution {
+    font-size: 9px;
   }
 
   .stanford-language-switcher {
@@ -1300,11 +1406,27 @@ body {
     padding: 0 15px 48px !important;
   }
 
+  .md-content__inner > h2:first-of-type {
+    margin-top: 1rem !important;
+  }
+
   .md-typeset h1 {
     font-size: 28px !important;
   }
 
   .md-typeset h2 {
     font-size: 23px !important;
+  }
+
+  .course-facts {
+    gap: 0.5rem;
+  }
+
+  .course-facts > div {
+    padding: 0.6rem;
+  }
+
+  .course-facts strong {
+    font-size: 0.82rem;
   }
 }

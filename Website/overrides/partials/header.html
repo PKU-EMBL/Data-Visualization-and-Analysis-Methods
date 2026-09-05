@@ -6,9 +6,14 @@
 {% set is_zh = page and page.url and page.url.startswith('zh') %}
 
 <header class="md-header stanford-header" data-md-component="header">
+  <a class="skip-link" href="#intro">{{ '跳转到主要内容' if is_zh else 'Skip to main content' }}</a>
   <div class="stanford-header__inner">
     <a class="stanford-brand" href="{{ zh_home if is_zh else home }}">
-      {{ '数据可视化与分析方法' if is_zh else 'Methodologies of Data Visualization and Analysis' }}
+      <img class="stanford-brand__logo" src="{{ 'img/pku-logo.png' | url }}" alt="Peking University" />
+      <span class="stanford-brand__text">
+        <span class="stanford-brand__title">{{ '数据可视化与分析方法' if is_zh else 'Methodologies of Data Visualization and Analysis' }}</span>
+        <span class="stanford-brand__institution">PKU EMBL · {{ '研究生课程' if is_zh else 'Graduate course' }}</span>
+      </span>
     </a>
     <nav class="stanford-nav" aria-label="{{ '课程导航' if is_zh else 'Course navigation' }}">
       <a href="{{ zh_home if is_zh else home }}#intro">{{ '概览' if is_zh else 'Overview' }}</a>

@@ -13,6 +13,13 @@ This graduate course develops practical methods for data visualization and analy
 
 Students work through guided exercises, current research literature, and official documentation. They first build small figures, then connect advanced visualizations to geospatial, atmospheric, and omics data. A team project applies these workflows to an original question. AI tools support learning but do not replace understanding. Students must inspect generated code and figures and remain responsible for interpretation, privacy, and reproducibility.
 
+<div class="course-facts" role="list" aria-label="Course at a glance">
+<div role="listitem"><span>Term</span><strong>Fall 2026–2027</strong></div>
+<div role="listitem"><span>Meeting</span><strong>Tuesday · 08:30–11:30</strong></div>
+<div role="listitem"><span>Room</span><strong>C303</strong></div>
+<div role="listitem"><span>Enrollment</span><strong>80 students</strong></div>
+</div>
+
 ## Course Staff { #people }
 
 ### Instructors { #instructors }

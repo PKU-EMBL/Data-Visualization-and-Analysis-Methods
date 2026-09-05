@@ -13,6 +13,13 @@ hide:
 
 学生通过引导式练习、近期文献和官方文档学习，先完成小型图表，再将高级可视化连接到地球空间、大气科学和组学数据，并以团队形式完成原创项目。AI 工具用于辅助学习，不能替代理解。每位学生都需要检查生成的代码和图表，并对分析解释、数据隐私和结果可复现性负责。
 
+<div class="course-facts" role="list" aria-label="课程速览">
+<div role="listitem"><span>学期</span><strong>2026–2027 秋季学期</strong></div>
+<div role="listitem"><span>时间</span><strong>每周二 · 08:30–11:30</strong></div>
+<div role="listitem"><span>教室</span><strong>C303</strong></div>
+<div role="listitem"><span>人数上限</span><strong>80 人</strong></div>
+</div>
+
 ## 课程团队 { #people }
 
 ### 任课教师 { #instructors }
